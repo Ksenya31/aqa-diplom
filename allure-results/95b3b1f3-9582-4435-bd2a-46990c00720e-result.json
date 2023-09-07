@@ -1,0 +1,53 @@
+{
+    "name": "Переход в раздел создания новости Creating News",
+    "start": 1694058034155,
+    "stop": 1694058039439,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "95b3b1f3-9582-4435-bd2a-46990c00720e",
+    "historyId": "feb5ef907590df8e58e9b73f4d4a9549",
+    "fullName": "ru.iteco.fmhandroid.ui.ControlPanelTest.shouldOpenCreateNewsForm",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.ControlPanelTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenCreateNewsForm"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.ControlPanelTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(729)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

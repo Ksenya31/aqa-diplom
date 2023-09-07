@@ -1,0 +1,66 @@
+{
+    "name": "Разворачивание новостной ленты с блоками News",
+    "start": 1694060475899,
+    "stop": 1694060480929,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "broken",
+    "statusDetails": {
+        "message": "Attempt to read from field 'android.view.View androidx.recyclerview.widget.RecyclerView$ViewHolder.itemView' on a null object reference",
+        "trace": "java.lang.NullPointerException: Attempt to read from field 'android.view.View androidx.recyclerview.widget.RecyclerView$ViewHolder.itemView' on a null object reference\n\tat ru.iteco.fmhandroid.ui.data.CustomRecyclerViewActions$RecyclerViewMatcher$1.matchesSafely(CustomRecyclerViewActions.java:58)\n\tat ru.iteco.fmhandroid.ui.data.CustomRecyclerViewActions$RecyclerViewMatcher$1.matchesSafely(CustomRecyclerViewActions.java:31)\n\tat org.hamcrest.TypeSafeMatcher.matches(TypeSafeMatcher.java:67)\n\tat ru.iteco.fmhandroid.ui.data.ViewActions$1.perform(ViewActions.java:43)\n\tat androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:2)\n\tat androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:25)\n\tat androidx.test.espresso.ViewInteraction.-$$Nest$mdoPerform(Unknown Source:0)\n\tat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:7)\n\tat androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)\n\tat java.util.concurrent.FutureTask.run(FutureTask.java:266)\n\tat android.os.Handler.handleCallback(Handler.java:883)\n\tat android.os.Handler.dispatchMessage(Handler.java:100)\n\tat android.os.Looper.loop(Looper.java:214)\n\tat android.app.ActivityThread.main(ActivityThread.java:7356)\n\tat java.lang.reflect.Method.invoke(Native Method)\n\tat com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)\n\tat com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)\n"
+    },
+    "steps": [
+    ],
+    "attachments": [
+        {
+            "source": "eddd4036-bbca-4060-97e5-a6f131d0edda-attachment.png",
+            "name": "failure-screenshot",
+            "type": "image/png"
+        },
+        {
+            "source": "10babd24-827f-4a1d-a5e8-aca8d82e5f7e-attachment.txt",
+            "name": "logcat-dump",
+            "type": "text/plain"
+        }
+    ],
+    "parameters": [
+    ],
+    "uuid": "ba0625ce-7218-4346-836d-b4f80ad7d3be",
+    "historyId": "9a7849ffa0b82092cee3b75ca9002b0f",
+    "fullName": "ru.iteco.fmhandroid.ui.MainPageTest.shouldOpenNewsItemDescription",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.MainPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenNewsItemDescription"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.MainPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(994)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

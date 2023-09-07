@@ -1,0 +1,53 @@
+{
+    "name": "Переход в Filter news",
+    "start": 1694057933773,
+    "stop": 1694057939652,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "ff2bb79b-16e2-4c85-b0e9-7c85b2c55d0e",
+    "historyId": "b5c4cadfb2c5b155886650a49c52a7fd",
+    "fullName": "ru.iteco.fmhandroid.ui.ControlPanelTest.shouldOpenTheNewsFilterSettingsForm",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.ControlPanelTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenTheNewsFilterSettingsForm"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.ControlPanelTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(729)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

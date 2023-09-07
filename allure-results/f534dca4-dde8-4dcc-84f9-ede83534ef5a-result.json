@@ -1,0 +1,53 @@
+{
+    "name": "Переход на страницу News из Action menu",
+    "start": 1694060627776,
+    "stop": 1694060637190,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "f534dca4-dde8-4dcc-84f9-ede83534ef5a",
+    "historyId": "970272869b7b820798747e4741b9e37b",
+    "fullName": "ru.iteco.fmhandroid.ui.MainPageTest.shouldOpenNewsPageByButNewsInTheMainMenu",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.MainPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenNewsPageByButNewsInTheMainMenu"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.MainPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(1014)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

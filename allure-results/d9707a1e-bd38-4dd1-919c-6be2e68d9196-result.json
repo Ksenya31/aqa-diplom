@@ -1,0 +1,53 @@
+{
+    "name": "Фильтрация новостей выбор даты в  правом календаре",
+    "start": 1694058339541,
+    "stop": 1694058350851,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "d9707a1e-bd38-4dd1-919c-6be2e68d9196",
+    "historyId": "c37083e4501af477cb8b50d32c352e3",
+    "fullName": "ru.iteco.fmhandroid.ui.FilterNewsPageTest.shouldShowMessageWrongPeriodWithEmptyPublishDateStartField",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.FilterNewsPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldShowMessageWrongPeriodWithEmptyPublishDateStartField"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.FilterNewsPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(785)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

@@ -1,0 +1,946 @@
+--------- beginning of system
+09-07 03:34:21.105  2037  2080 W PackageParser: Unknown element under <manifest>: queries at /data/app/vmdl1372201155.tmp/base.apk Binary XML file line #16
+09-07 03:34:21.112  2037  2080 I PackageManager: Update package ru.iteco.fmhandroid.test code path from /data/app/ru.iteco.fmhandroid.test-7yzesuzC1HR5lAimzp9Auw== to /data/app/ru.iteco.fmhandroid.test-Q87Tp4CeQ7K-Asz95YxXNA==; Retain data and using new
+09-07 03:34:21.112  2037  2080 I PackageManager: Update package ru.iteco.fmhandroid.test resource path from /data/app/ru.iteco.fmhandroid.test-7yzesuzC1HR5lAimzp9Auw== to /data/app/ru.iteco.fmhandroid.test-Q87Tp4CeQ7K-Asz95YxXNA==; Retain data and using new
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission android.permission.MANAGE_DOCUMENTS from package com.google.android.youtube (protectionLevel=262146 flags=0x30dbbe45)
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission android.permission.INTERACT_ACROSS_PROFILES from package com.google.android.googlequicksearchbox (protectionLevel=18 flags=0x28dbbec5)
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission android.permission.MANAGE_SOUND_TRIGGER from package com.google.android.googlequicksearchbox (protectionLevel=18 flags=0x28dbbec5)
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission android.permission.MANAGE_USB from package com.google.android.googlequicksearchbox (protectionLevel=18 flags=0x28dbbec5)
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission android.permission.CONTROL_INCALL_EXPERIENCE from package com.google.android.googlequicksearchbox (protectionLevel=18 flags=0x28dbbec5)
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission android.permission.WRITE_APN_SETTINGS from package com.google.android.googlequicksearchbox (protectionLevel=18 flags=0x28dbbec5)
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission android.permission.SUBSTITUTE_SHARE_TARGET_APP_NAME_AND_ICON from package com.google.android.googlequicksearchbox (protectionLevel=18 flags=0x28dbbec5)
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission com.google.android.googleapps.permission.GOOGLE_AUTH from package com.android.providers.calendar (protectionLevel=2 flags=0x30883e45)
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl from package com.android.providers.calendar (protectionLevel=2 flags=0x30883e45)
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission android.permission.WRITE_SECURE_SETTINGS from package com.google.android.apps.enterprise.dmagent (protectionLevel=50 flags=0x30083e05)
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission android.permission.CONNECTIVITY_INTERNAL from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30083e05)
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission android.permission.MANAGE_USB from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30083e05)
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission android.permission.CHANGE_COMPONENT_ENABLED_STATE from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30083e05)
+09-07 03:34:21.137  2037  2080 I PackageManager: Un-granting permission android.permission.MANAGE_CA_CERTIFICATES from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30083e05)
+09-07 03:34:21.138  2037  2080 I PackageManager: Un-granting permission android.permission.MANAGE_USERS from package com.google.android.apps.enterprise.dmagent (protectionLevel=18 flags=0x30083e05)
+09-07 03:34:21.138  2037  2080 I PackageManager: Un-granting permission com.google.android.setupwizard.READ_DEVICE_ORIGIN from package com.google.android.apps.messaging (protectionLevel=18 flags=0x38cbbe45)
+09-07 03:34:21.138  2037  2080 I PackageManager: Un-granting permission android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS from package com.android.vending (protectionLevel=258 flags=0x28cabec5)
+09-07 03:34:21.138  2037  2080 I PackageManager: Un-granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS from package com.android.vending (protectionLevel=2 flags=0x28cabec5)
+09-07 03:34:21.139  2037  2080 I PackageManager: Un-granting permission android.permission.BIND_WALLPAPER from package com.android.camera2 (protectionLevel=18 flags=0x20d8bc45)
+09-07 03:34:21.139  2037  2080 I PackageManager: Un-granting permission android.permission.REQUEST_INSTALL_PACKAGES from package com.google.android.gm (protectionLevel=66 flags=0x38cbbe45)
+09-07 03:34:21.139  2037  2080 I PackageManager: Un-granting permission android.permission.BIND_JOB_SERVICE from package com.google.android.music (protectionLevel=2 flags=0x38cbbe65)
+09-07 03:34:21.139  2037  2080 I PackageManager: Un-granting permission android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS from package com.google.android.captiveportallogin (protectionLevel=18 flags=0x38c8be45)
+09-07 03:34:21.139  2037  2080 I PackageManager: Un-granting permission android.permission.NETWORK_BYPASS_PRIVATE_DNS from package com.google.android.captiveportallogin (protectionLevel=2 flags=0x38c8be45)
+09-07 03:34:21.139  2037  2080 I PackageManager: Un-granting permission android.permission.REQUEST_INSTALL_PACKAGES from package com.google.android.apps.docs (protectionLevel=66 flags=0x38cbbe45)
+09-07 03:34:21.139  2037  2080 I PackageManager: Un-granting permission android.permission.INTERACT_ACROSS_USERS from package com.google.android.syncadapters.contacts (protectionLevel=50 flags=0x20883e45)
+09-07 03:34:21.139  2037  2080 I PackageManager: Un-granting permission android.permission.REQUEST_INSTALL_PACKAGES from package com.android.chrome (protectionLevel=66 flags=0xa0cbbe45)
+09-07 03:34:21.139  2037  2080 I PackageManager: Un-granting permission android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS from package com.google.android.gms (protectionLevel=50 flags=0xa0cabec5)
+09-07 03:34:21.139  2037  2080 I PackageManager: Un-granting permission android.permission.CAPTURE_VIDEO_OUTPUT from package com.google.android.gms (protectionLevel=2 flags=0xa0cabec5)
+09-07 03:34:21.139  2037  2080 I PackageManager: Un-granting permission android.permission.FORCE_STOP_PACKAGES from package com.google.android.gms (protectionLevel=18 flags=0xa0cabec5)
+09-07 03:34:21.140  2037  2080 I PackageManager: Un-granting permission android.permission.MODIFY_DEFAULT_AUDIO_EFFECTS from package com.google.android.gms (protectionLevel=18 flags=0xa0cabec5)
+09-07 03:34:21.140  2037  2080 I PackageManager: Un-granting permission android.permission.MANAGE_DEVICE_ADMINS from package com.google.android.gms (protectionLevel=2 flags=0xa0cabec5)
+09-07 03:34:21.140  2037  2080 I PackageManager: Un-granting permission android.permission.MANAGE_ACTIVITY_STACKS from package com.google.android.gms (protectionLevel=2 flags=0xa0cabec5)
+09-07 03:34:21.140  2037  2080 I PackageManager: Un-granting permission android.permission.CAPTURE_SECURE_VIDEO_OUTPUT from package com.google.android.gms (protectionLevel=2 flags=0xa0cabec5)
+09-07 03:34:21.140  2037  2080 I PackageManager: Un-granting permission android.permission.MANAGE_ROLLBACKS from package com.google.android.gms (protectionLevel=514 flags=0xa0cabec5)
+09-07 03:34:21.140  2037  2080 I PackageManager: Un-granting permission android.permission.MEDIA_CONTENT_CONTROL from package com.google.android.gms (protectionLevel=18 flags=0xa0cabec5)
+09-07 03:34:21.140  2037  2080 I PackageManager: Un-granting permission android.permission.HIDE_NON_SYSTEM_OVERLAY_WINDOWS from package com.google.android.gms (protectionLevel=258 flags=0xa0cabec5)
+09-07 03:34:21.140  2037  2080 I PackageManager: Un-granting permission com.google.android.googleapps.permission.GOOGLE_AUTH from package com.google.android.videos (protectionLevel=2 flags=0x30dbbe45)
+09-07 03:34:21.140  2037  2080 I PackageManager: Un-granting permission android.permission.WRITE_MEDIA_STORAGE from package com.google.android.apps.photos (protectionLevel=18 flags=0x38d9be45)
+--------- beginning of main
+09-07 03:34:21.207  2037  2133 I InputReader: Reconfiguring input devices.  changes=0x00000010
+09-07 03:34:21.213  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.android.musicfx/.Compatibility$Receiver
+09-07 03:34:21.215  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemonitor.impl.PackageMonitorReceiverImpl$RegisteredReceiver
+09-07 03:34:21.240  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemonitor.backgroundimpl.BackgroundPackageMonitorReceiverImpl$RegisteredReceiver
+09-07 03:34:21.240  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.instantapps.appmanagement.InstantAppRemoveMonitor
+09-07 03:34:21.243  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+09-07 03:34:21.243  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+09-07 03:34:21.241  2037  2133 I InputReader: Reconfiguring input devices.  changes=0x00000010
+09-07 03:34:21.245  2689  2689 I GsaVoiceInteractionSrv: (REDACTED) O received %s
+09-07 03:34:21.246  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.packageinstaller/com.android.packageinstaller.PackageInstalledReceiver
+09-07 03:34:21.247  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.android.musicfx/.Compatibility$Receiver
+09-07 03:34:21.247  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemonitor.impl.PackageMonitorReceiverImpl$RegisteredReceiver
+09-07 03:34:21.247  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.android.vending/com.google.android.finsky.packagemonitor.backgroundimpl.BackgroundPackageMonitorReceiverImpl$RegisteredReceiver
+09-07 03:34:21.247  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+09-07 03:34:21.247  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+09-07 03:34:21.247  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+09-07 03:34:21.248  2037  2133 I InputReader: Reconfiguring input devices.  changes=0x00000010
+09-07 03:34:21.248  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.ims/.receivers.RcsAutoStartReceiver
+09-07 03:34:21.255  2434  2940 E ActivityThread: Failed to find provider info for com.google.android.apps.wellbeing.api
+09-07 03:34:21.259  1775  1775 D Zygote  : Forked child process 9770
+09-07 03:34:21.263  2689  2689 I GsaVoiceInteractionSrv: (REDACTED) O received %s
+09-07 03:34:21.264  2037  2067 I ActivityManager: Start proc 9770:com.android.keychain/1000 for service {com.android.keychain/com.android.keychain.KeyChainService}
+09-07 03:34:21.264  2689  2689 I GsaVoiceInteractionSrv: (REDACTED) O received %s
+09-07 03:34:21.270  9770  9770 W ndroid.keychai: Unexpected CPU variant for X86 using defaults: x86
+09-07 03:34:21.273  9770  9770 E ndroid.keychai: Not starting debugger since process cannot load the jdwp agent.
+09-07 03:34:21.273  8176  8176 I Finsky  : [2] vms.g(1): vms - Received: android.intent.action.PACKAGE_REMOVED, [JKgrAT7ZrU_atynDxHtFKlznxOwkruuqzdx-Cu5fTVw]
+09-07 03:34:21.319  2666  3039 W aoza    : Abort, client detached.
+09-07 03:34:21.319  2666  3039 I chatty  : uid=10104(com.google.android.googlequicksearchbox) EventBus0 identical 1 line
+09-07 03:34:21.331  2666  3039 W aoza    : Abort, client detached.
+09-07 03:34:21.332  9770  9770 I ndroid.keychai: The ClassLoaderContext is a special shared library.
+09-07 03:34:21.382  7867  9793 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
+09-07 03:34:21.406  2037  2037 W Looper  : Slow dispatch took 146ms main h=android.app.ActivityThread$H c=android.app.-$$Lambda$LoadedApk$ReceiverDispatcher$Args$_BumDX2UKsnxLVrE6UJsJZkotuA@62fc9d4 m=0
+09-07 03:34:21.416  8425  9807 I Fitness : (REDACTED) FitCleanupIntentOperation received Intent %s
+09-07 03:34:21.416  7867  7867 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-07 03:34:21.416  7867  7867 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-07 03:34:21.422  8425  9789 I FontLog : (REDACTED) Package %s has no metadata
+09-07 03:34:21.427  2279  2279 D CarrierSvcBindHelper: No carrier app for: 0
+09-07 03:34:21.430  2279  2279 D CarrierSvcBindHelper: No carrier app for: 0
+09-07 03:34:21.444  8425  8425 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.nearby.exposurenotification.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+09-07 03:34:21.445  8425  8425 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.nearby.exposurenotification.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+09-07 03:34:21.454  2279  2279 D CarrierConfigLoader: mHandler: 9 phoneId: 0
+09-07 03:34:21.457  8176  9816 I Finsky  : [716] oll.run(296): Wrote row to frosting DB: 1618
+09-07 03:34:21.482  8425  8574 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+09-07 03:34:21.489  8425  8574 W ChimeraUtils: Module com.google.android.gms.nearby_en missing resource null(0)
+09-07 03:34:21.508  7867  7867 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.common.BIND_SHARED_PREFS pkg=com.google.android.gms }
+09-07 03:34:21.516  7867  7898 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36
+09-07 03:34:21.538  2037  2037 W Looper  : Slow delivery took 211ms main h=android.app.ActivityThread$H c=android.app.-$$Lambda$LoadedApk$ReceiverDispatcher$Args$_BumDX2UKsnxLVrE6UJsJZkotuA@31c17a m=0
+09-07 03:34:21.539  2037  2037 W Looper  : Slow dispatch took 132ms main h=android.app.ActivityThread$H c=android.app.-$$Lambda$LoadedApk$ReceiverDispatcher$Args$_BumDX2UKsnxLVrE6UJsJZkotuA@31c17a m=0
+09-07 03:34:21.558  8176  8257 I Finsky  : [592] jnn.a(53): AIM: AppInfoManager-Perf > OnDeviceAppInfo > cacheHitCount=0, cacheMissCount=1. Missed  in cache (limit 10) : [ru.iteco.fmhandroid.test]
+09-07 03:34:21.574  8176  9816 I Finsky  : [716] oll.run(296): Wrote row to frosting DB: 1619
+09-07 03:34:21.575  8176  8176 I Finsky  : [2] vms.g(1): vms - Received: android.intent.action.PACKAGE_ADDED, [JKgrAT7ZrU_atynDxHtFKlznxOwkruuqzdx-Cu5fTVw]
+09-07 03:34:21.582  8176  9829 I Finsky  : [720] pth.accept(76): IQ: handled package removed
+09-07 03:34:21.585  8176  8257 I Finsky  : [592] jlf.apply(886): AIM: Got app ownership map. App counts: . Unique apps: 0
+09-07 03:34:21.603  7867  7932 W Icing   : No valid account for uploading user actions
+09-07 03:34:21.611  2037  2037 I Telecom : DefaultDialerCache: Refreshing default dialer for user 0: now com.android.dialer: DDC.oR@AJE
+09-07 03:34:21.612  8176  9816 I Finsky  : [716] oll.run(296): Wrote row to frosting DB: 1620
+09-07 03:34:21.613  8425  8425 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+09-07 03:34:21.613  8425  8425 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+09-07 03:34:21.619  2037  2037 V BackupManagerConstants: getFullBackupIntervalMilliseconds(...) returns 86400000
+09-07 03:34:21.621  8176  8176 I Finsky  : [2] qos.akj(13): DTU: Received onPackageAdded, replacing: true
+09-07 03:34:21.626  8176  8221 I android.vendin: Waiting for a blocking GC ProfileSaver
+09-07 03:34:21.626  2037  2037 V BackupManagerConstants: getFullBackupRequiredNetworkType(...) returns 2
+09-07 03:34:21.626  8176  8176 I Finsky  : [2] vms.g(1): vms - Received: android.intent.action.PACKAGE_ADDED, [JKgrAT7ZrU_atynDxHtFKlznxOwkruuqzdx-Cu5fTVw]
+09-07 03:34:21.627  2037  2037 V BackupManagerConstants: getFullBackupRequireCharging(...) returns true
+09-07 03:34:21.633  8176  8257 I Finsky  : [592] jnn.a(53): AIM: AppInfoManager-Perf > OnDeviceAppInfo > cacheHitCount=0, cacheMissCount=1. Missed  in cache (limit 10) : [ru.iteco.fmhandroid.test]
+09-07 03:34:21.634  7867  7867 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+09-07 03:34:21.634  7867  7867 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+09-07 03:34:21.638  8176  8257 I Finsky  : [592] jlf.apply(886): AIM: Got app ownership map. App counts: . Unique apps: 0
+09-07 03:34:21.648  8176  8221 I android.vendin: WaitForGcToComplete blocked ProfileSaver on ProfileSaver for 22.577ms
+09-07 03:34:21.649  8176  9816 I Finsky  : [716] oll.run(296): Wrote row to frosting DB: 1621
+09-07 03:34:21.652  7867  7932 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+09-07 03:34:21.654  8176  8176 I Finsky  : [2] vms.g(1): vms - Deduping intent android.intent.action.PACKAGE_ADDED
+09-07 03:34:21.656  8176  8176 I Finsky  : [2] vms.g(1): vms - Received: android.intent.action.PACKAGE_ADDED, [JKgrAT7ZrU_atynDxHtFKlznxOwkruuqzdx-Cu5fTVw]
+09-07 03:34:21.659  8176  9816 I Finsky  : [716] oll.run(296): Wrote row to frosting DB: 1622
+09-07 03:34:21.665  7867  7932 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+09-07 03:34:21.671  7867  7932 I Icing   : Indexing done com.google.android.gms-apps
+09-07 03:34:21.671  8176  8176 I Finsky  : [2] vms.g(1): vms - Deduping intent android.intent.action.PACKAGE_ADDED
+09-07 03:34:21.675  7867  7932 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms
+09-07 03:34:21.676  7867  7932 I Icing   : Indexing done com.google.android.gms-apps
+09-07 03:34:21.684  8176  8257 I Finsky  : [592] jnj.a(202): AIM: AppInfoManager-Perf > ItemModel > CacheSize=0, cacheHitCount=0, cacheMissCount=1, total appsWithNoServerDataCount=0. Missed  in cache (limit 10) : [ru.iteco.fmhandroid.test]
+09-07 03:34:21.684  8176  9816 I Finsky  : [716] oll.run(296): Wrote row to frosting DB: 1623
+09-07 03:34:21.685  8176  8257 I Finsky  : [592] jnm.n(24): AIM: AppInfoManager-Perf > ItemModel > ItemStore Called 1 apps cacheOptions = USE_CACHE
+09-07 03:34:21.685  8176  8257 I Finsky  : [592] jnj.a(1098): AIM: ItemModel fetch - unauth(1), auth()
+09-07 03:34:21.690  7867  7909 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30
+09-07 03:34:21.692  8176  8257 I Finsky  : [592] rmt.apply(40): ItemStore: Not cached: ru.iteco.fmhandroid.test
+09-07 03:34:21.693  8176  8252 I Finsky  : [587] jnj.a(202): AIM: AppInfoManager-Perf > ItemModel > CacheSize=0, cacheHitCount=0, cacheMissCount=1, total appsWithNoServerDataCount=0. Missed  in cache (limit 10) : [ru.iteco.fmhandroid.test]
+09-07 03:34:21.693  8176  8252 I Finsky  : [587] jnm.n(24): AIM: AppInfoManager-Perf > ItemModel > ItemStore Called 1 apps cacheOptions = USE_CACHE
+09-07 03:34:21.693  8176  8252 I Finsky  : [587] jnj.a(1098): AIM: ItemModel fetch - unauth(1), auth()
+09-07 03:34:21.694  8176  8252 I Finsky  : [587] rmt.apply(40): ItemStore: Not cached: ru.iteco.fmhandroid.test
+09-07 03:34:21.698  8176  8189 I android.vendin: WaitForGcToComplete blocked Background on ProfileSaver for 40.493ms
+09-07 03:34:21.719  7867  7901 W Icing   : No valid account for uploading user actions
+09-07 03:34:21.721  2037  4831 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.android.musicfx/.Compatibility$Receiver
+09-07 03:34:21.722  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.apps.photos/.account.full.FetchAccountPropertiesAppUpgradeBroadcastReceiver
+09-07 03:34:21.722  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.apps.photos/.account.full.SyncAccountsForLoginBroadcastReceiver
+09-07 03:34:21.722  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.apps.photos/.experiments.phenotype.full.PhenotypeAppUpgradeBroadcastReceiver
+09-07 03:34:21.722  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.apps.photos/.notificationchannels.AppUpdateBroadcastReceiver
+09-07 03:34:21.722  2037  2037 W Looper  : Drained
+09-07 03:34:21.723  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+09-07 03:34:21.723  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+09-07 03:34:21.723  2037  2066 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:ru.iteco.fmhandroid.test flg=0x4000010 (has extras) } to com.google.android.ims/.receivers.RcsAutoStartReceiver
+09-07 03:34:21.726  1858  2116 E         : Couldn't opendir /data/app/vmdl1372201155.tmp: No such file or directory
+09-07 03:34:21.727  1858  2116 E installd: Failed to delete /data/app/vmdl1372201155.tmp: No such file or directory
+09-07 03:34:21.748  7867  7901 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0
+09-07 03:34:21.784  2037  2428 I ActivityManager: Force stopping ru.iteco.fmhandroid.test appid=10135 user=0: from pid 9836
+09-07 03:34:21.795  2279  2279 D CarrierSvcBindHelper: No carrier app for: 0
+09-07 03:34:21.814  8425  9819 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 695707]
+09-07 03:34:21.823  8425  9819 I AlarmManager: setExactAndAllowWhileIdle [name: GCM_HB_ALARM type: 2 triggerAtMillis: 695715]
+09-07 03:34:21.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:21.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:22.342  9846  9846 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+09-07 03:34:22.372  9846  9846 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+09-07 03:34:22.373  9846  9846 I AndroidRuntime: Using default boot image
+09-07 03:34:22.373  9846  9846 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+09-07 03:34:22.373  9846  9846 I AndroidRuntime: Leaving lock profiling enabled
+09-07 03:34:22.374  9846  9846 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+09-07 03:34:22.386  9846  9846 W app_process: Could not reserve sentinel fault page
+09-07 03:34:22.365  9846  9846 W app_process: type=1400 audit(0.0:67): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=6894 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+09-07 03:34:22.365  9846  9846 W app_process: type=1400 audit(0.0:68): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=6894 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+09-07 03:34:22.365  9846  9846 W app_process: type=1400 audit(0.0:69): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=6894 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+09-07 03:34:22.733  9846  9846 D ICU     : Time zone APEX file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+09-07 03:34:22.743  9846  9846 W app_process: Unexpected CPU variant for X86 using defaults: x86
+09-07 03:34:22.750  9846  9846 I app_process: The ClassLoaderContext is a special shared library.
+09-07 03:34:22.763  9846  9846 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+09-07 03:34:22.769  8176  8257 E Finsky  : [592] rna.a(110): ItemStore: getItems RPC failed.
+09-07 03:34:22.769  9846  9846 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+09-07 03:34:22.779  2037  2428 I ActivityManager: Force stopping ru.iteco.fmhandroid appid=10136 user=0: start instr
+09-07 03:34:22.796  1775  1775 D Zygote  : Forked child process 9865
+09-07 03:34:22.800  9865  9865 I teco.fmhandroi: Late-enabling -Xcheck:jni
+09-07 03:34:22.810  9865  9865 E teco.fmhandroi: Unknown bits set in runtime_flags: 0x8000
+09-07 03:34:22.810  9865  9865 W teco.fmhandroi: Unexpected CPU variant for X86 using defaults: x86
+09-07 03:34:22.814  2037  2067 I ActivityManager: Start proc 9865:ru.iteco.fmhandroid/u0a136 for added application ru.iteco.fmhandroid
+09-07 03:34:22.852  9865  9865 I teco.fmhandroi: The ClassLoaderContext is a special shared library.
+09-07 03:34:22.855  9865  9865 I teco.fmhandroi: The ClassLoaderContext is a special shared library.
+09-07 03:34:22.877  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:22.877  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:23.210  9865  9865 I teco.fmhandroi: The ClassLoaderContext is a special shared library.
+09-07 03:34:23.211  9865  9865 I teco.fmhandroi: The ClassLoaderContext is a special shared library.
+09-07 03:34:23.503  9865  9865 W teco.fmhandroi: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+09-07 03:34:23.503  9865  9865 W teco.fmhandroi: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+09-07 03:34:23.510  9865  9865 I MonitoringInstr: newApplication called!
+09-07 03:34:23.530  9865  9865 I FirebaseApp: Device unlocked: initializing all Firebase APIs for app [DEFAULT]
+09-07 03:34:23.537  9865  9865 I FirebaseCrashlytics: Initializing Firebase Crashlytics 18.2.6 for ru.iteco.fmhandroid
+09-07 03:34:23.568  9865  9899 I DynamiteModule: Considering local module com.google.android.gms.measurement.dynamite:55 and remote module com.google.android.gms.measurement.dynamite:93
+09-07 03:34:23.568  9865  9899 I DynamiteModule: Selected remote version of com.google.android.gms.measurement.dynamite, version >= 93
+09-07 03:34:23.569  9865  9899 V DynamiteModule: Dynamite loader version >= 2, using loadModule2NoCrashUtils
+09-07 03:34:23.584  9865  9899 W System  : ClassLoader referenced unknown path: 
+09-07 03:34:23.636  9865  9865 I FirebaseInitProvider: FirebaseApp initialization successful
+09-07 03:34:23.649  9865  9899 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I (greylist,core-platform-api, linking, allowed)
+09-07 03:34:23.650  9865  9899 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I (greylist, linking, allowed)
+09-07 03:34:23.650  9865  9899 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapInt(Ljava/lang/Object;JII)Z (greylist, linking, allowed)
+09-07 03:34:23.650  9865  9899 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapLong(Ljava/lang/Object;JJJ)Z (greylist, linking, allowed)
+09-07 03:34:23.650  9865  9899 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->getIntVolatile(Ljava/lang/Object;J)I (greylist, linking, allowed)
+09-07 03:34:23.650  9865  9899 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->getObjectVolatile(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-07 03:34:23.650  9865  9899 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->objectFieldOffset(Ljava/lang/reflect/Field;)J (greylist,core-platform-api, linking, allowed)
+09-07 03:34:23.650  9865  9899 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->putObjectVolatile(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+09-07 03:34:23.650  9865  9899 W teco.fmhandroi: Accessing hidden field Lsun/misc/Unsafe;->theUnsafe:Lsun/misc/Unsafe; (greylist, reflection, allowed)
+09-07 03:34:23.654  9865  9865 I MonitoringInstr: Instrumentation started!
+09-07 03:34:23.661  9865  9865 D ClassesArgTokenizer: input: ru.iteco.fmhandroid.ui.ControlPanelTest#shouldOpenCreateNewsForm
+09-07 03:34:23.663  9865  9865 D ClassesArgTokenizer: result: [ru.iteco.fmhandroid.ui.ControlPanelTest#shouldOpenCreateNewsForm]
+09-07 03:34:23.663  9865  9865 D ClassesArgTokenizer: input: null
+09-07 03:34:23.663  9865  9865 D ClassesArgTokenizer: result: []
+09-07 03:34:23.667  9865  9865 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+09-07 03:34:23.677  9865  9911 D AndroidJUnitRunner: onStart is called.
+09-07 03:34:23.682  9865  9865 I MonitoringInstr: No JSBridge.
+09-07 03:34:23.695  9865  9911 D TestRequestBuilder: Skipping class path scanning and directly running [ru.iteco.fmhandroid.ui.ControlPanelTest]
+09-07 03:34:23.701  9865  9911 D ClassesArgTokenizer: input: ru.iteco.fmhandroid.ui.ControlPanelTest#shouldOpenCreateNewsForm
+09-07 03:34:23.701  9865  9911 D ClassesArgTokenizer: result: [ru.iteco.fmhandroid.ui.ControlPanelTest#shouldOpenCreateNewsForm]
+09-07 03:34:23.701  9865  9911 D ClassesArgTokenizer: input: null
+09-07 03:34:23.701  9865  9911 D ClassesArgTokenizer: result: []
+09-07 03:34:23.716  9865  9911 D AndroidJUnitRunner: Use the raw file system for managing file I/O.
+09-07 03:34:23.717  9865  9909 V FA      : App measurement collection enabled
+09-07 03:34:23.718  9865  9909 V FA      : App measurement enabled for app package, google app id: ru.iteco.fmhandroid, 1:729587742060:android:e7d6f87c783f52b9a42f49
+09-07 03:34:23.721  9865  9909 I FA      : App measurement initialized, version: 80069
+09-07 03:34:23.721  9865  9909 I FA      : To enable debug logging run: adb shell setprop log.tag.FA VERBOSE
+09-07 03:34:23.721  9865  9909 I FA      : To enable faster debug mode event logging run:
+09-07 03:34:23.721  9865  9909 I FA      :   adb shell setprop debug.firebase.analytics.app ru.iteco.fmhandroid
+09-07 03:34:23.721  9865  9909 D FA      : Debug-level message logging enabled
+09-07 03:34:23.723  9865  9911 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+09-07 03:34:23.724  9865  9911 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+09-07 03:34:23.724  9865  9911 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+09-07 03:34:23.724  9865  9911 D TestExecutor: Adding listener androidx.test.internal.runner.listener.TraceRunListener
+09-07 03:34:23.728  9865  9911 I TestRunner: run started: 1 tests
+09-07 03:34:23.746  9865  9909 D FA      : Resetting session stitching token to not null
+09-07 03:34:23.759  9865  9909 V FA      : Connecting to remote service
+09-07 03:34:23.763  7867  7867 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+09-07 03:34:23.763  7867  7867 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+09-07 03:34:23.767  9865  9911 I TestRunner: started: shouldOpenCreateNewsForm(ru.iteco.fmhandroid.ui.ControlPanelTest)
+09-07 03:34:23.776  9865  9909 V FA      : Connection attempt already in progress
+09-07 03:34:23.785  9865  9909 V FA      : Connection attempt already in progress
+09-07 03:34:23.785  9865  9909 D FA      : Connected to remote service
+09-07 03:34:23.786  9865  9909 V FA      : Processing queued up service tasks: 3
+09-07 03:34:23.833  7867  9914 V FA-SVC  : Saving default event parameters, appId, data size: ru.iteco.fmhandroid, 2
+09-07 03:34:23.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:23.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:23.899  1774  9915 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+09-07 03:34:23.949  2037  2037 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+09-07 03:34:23.953  2689  3033 I fteu    : (REDACTED) #onAccessibilityStateChanged enabled: %s
+09-07 03:34:23.965  2666  3003 I biwj    : NGA disabled since it's running Panthera and at least one a11y feature is on.
+09-07 03:34:23.969  2666  3003 I biwj    : (REDACTED) Nga state changed to %s
+09-07 03:34:23.969  2689  3084 I fteu    : #onChange
+09-07 03:34:23.974  2689  3084 I csoe    : #FCF: onChange
+09-07 03:34:23.992  2689  3084 I csoi    : (REDACTED) FCF System FeatureName to check: %s
+09-07 03:34:23.993  2689  3084 I csoi    : (REDACTED) FCF: Device model check status : %s
+09-07 03:34:23.996  2689  3085 I csof    : FCF A11y Checker - readyForTngMa
+09-07 03:34:24.007  2689  3085 I csqs    : (REDACTED) #FCF: Managed profile check status : %s
+09-07 03:34:24.008  2689  3084 I ctnd    : (REDACTED) #isBluetoothOrWiredHeadsetConnected Number of connected audio devices: %s
+09-07 03:34:24.008  2689  3084 I cspe    : (REDACTED) #FCF: Headset Connected Status: %s
+09-07 03:34:24.009  2689  3085 I csqr    : (REDACTED) #FCF: Demo mode check status : %s
+09-07 03:34:24.014  2689  3085 I csno    : (REDACTED) #FCF: Assistant primary locale : %s
+09-07 03:34:24.014  2689  3085 I csno    : (REDACTED) #FCF: Assistant Primary locale check status : %s
+09-07 03:34:24.021  9865  9911 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+09-07 03:34:24.026  2666  2806 I earchbox:searc: Waiting for a blocking GC ProfileSaver
+09-07 03:34:24.032  8425  8425 W SystemServiceRegistry: No service published for: persistent_data_block
+09-07 03:34:24.038  2037  2428 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=ru.iteco.fmhandroid.test/androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity (has extras)} from uid 10136
+09-07 03:34:24.039  2689  3085 I yzq     : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+09-07 03:34:24.040  7867  7867 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.checkin.START pkg=com.google.android.gms }
+09-07 03:34:24.040  7867  7867 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.checkin.START pkg=com.google.android.gms }
+09-07 03:34:24.042  2666  3039 I bjbd    : Trying to enqueue PieTriggeringWorker
+09-07 03:34:24.046  2689  2689 I aaag    : (REDACTED) eventData = %s
+09-07 03:34:24.046  2689  3085 I yzq     : (REDACTED) Nga on-device enabled based on TNG:MA active state: %b
+09-07 03:34:24.047  2689  3085 I yzq     : Unsubscribed to apa or classic variant change.
+09-07 03:34:24.057  2037  2061 E system_server: Invalid ID 0x00000000.
+09-07 03:34:24.059  2037  4391 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:24.059  2037  4391 I chatty  : uid=1000(system) Binder:2037_13 identical 8 lines
+09-07 03:34:24.059  2037  4391 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:24.070  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:24.077  2689  3084 I znc     : Logging success flow
+09-07 03:34:24.078  7867  8058 I Checkin : [CheckinApiChimeraService] onGetService
+09-07 03:34:24.087  2666  2806 I earchbox:searc: WaitForGcToComplete blocked ProfileSaver on HeapTrim for 63.016ms
+09-07 03:34:24.103  1775  1775 D Zygote  : Forked child process 9923
+09-07 03:34:24.105  2037  2067 I ActivityManager: Start proc 9923:ru.iteco.fmhandroid.test/u0a135 for activity {ru.iteco.fmhandroid.test/androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity}
+09-07 03:34:24.106  2666  3039 I bjbd    : Trying to enqueue PieTriggeringWorker
+09-07 03:34:24.107  2689  3085 W csqu    : Unable to check for productivity accounts. Assuming there are none.
+09-07 03:34:24.107  2689  3085 W csqu    : com.google.android.libraries.geller.portable.GellerException: Code: INVALID_ARGUMENT, Message: Account name is null.
+09-07 03:34:24.107  2689  3085 W csqu    : 	at ghid.a(PG:6)
+09-07 03:34:24.107  2689  3085 W csqu    : 	at gxvx.a(PG:3)
+09-07 03:34:24.107  2689  3085 W csqu    : 	at hnzx.a(PG:1)
+09-07 03:34:24.107  2689  3085 W csqu    : 	at hobr.run(PG:4)
+09-07 03:34:24.107  2689  3085 W csqu    : 	at ewes.run(PG:1)
+09-07 03:34:24.107  2689  3085 W csqu    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+09-07 03:34:24.107  2689  3085 W csqu    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+09-07 03:34:24.107  2689  3085 W csqu    : 	at ewdw.run(PG:2)
+09-07 03:34:24.107  2689  3085 W csqu    : 	at java.lang.Thread.run(Thread.java:919)
+09-07 03:34:24.107  2689  3085 W csqu    : 	at ewfb.run(PG:5)
+09-07 03:34:24.109  2689  2689 I aaag    : (REDACTED) eventData = %s
+09-07 03:34:24.112  2689  3085 I csts    : (REDACTED) #FCF evaluate: %s
+09-07 03:34:24.112  2689  3085 I csts    : (REDACTED) TngMaStatusChecker#evaluateInternal completed in %s millis
+09-07 03:34:24.115  2689  3085 I cscy    : (REDACTED) TNG:MA status updated: %s
+09-07 03:34:24.115  2689  3085 I cscy    : TNG:MA became ineligible, client should disconnect
+09-07 03:34:24.117  2689  3085 I cscy    : #disconnectAndStop - preventing double stop
+09-07 03:34:24.119  2689  3085 I csts    : #invalidationSource: adding saa update checker
+09-07 03:34:24.120  2689  3085 I csts    : #invalidationSource: adding headset checker
+09-07 03:34:24.120  2689  3085 I znc     : Logging success flow
+09-07 03:34:24.122  9923  9923 I fmhandroid.tes: Late-enabling -Xcheck:jni
+09-07 03:34:24.144  2666  3039 I bjbd    : Trying to enqueue PieTriggeringWorker
+09-07 03:34:24.145  9923  9923 E fmhandroid.tes: Unknown bits set in runtime_flags: 0x8000
+09-07 03:34:24.145  9923  9923 W fmhandroid.tes: Unexpected CPU variant for X86 using defaults: x86
+09-07 03:34:24.149  2689  2689 I aaag    : (REDACTED) eventData = %s
+09-07 03:34:24.163  2666  2666 I dnsi    : onPause
+09-07 03:34:24.168  2037  2425 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:24.183  2037  2425 I chatty  : uid=1000(system) Binder:2037_7 identical 28 lines
+09-07 03:34:24.183  2037  2425 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:24.193  2037  2061 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:24.194  2037  2061 I chatty  : uid=1000(system) android.anim identical 8 lines
+09-07 03:34:24.194  2037  2061 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:24.216  2666  3068 D EGL_emulation: eglMakeCurrent: 0xda21b0e0: ver 2 0 (tinfo 0xda20fbb0)
+09-07 03:34:24.221  2182  2468 D EGL_emulation: eglMakeCurrent: 0xda21a360: ver 2 0 (tinfo 0xda20f590)
+09-07 03:34:24.231  9923  9923 I fmhandroid.tes: The ClassLoaderContext is a special shared library.
+09-07 03:34:24.234  9923  9923 I fmhandroid.tes: The ClassLoaderContext is a special shared library.
+09-07 03:34:24.237  2182  2468 D EGL_emulation: eglMakeCurrent: 0xda21a360: ver 2 0 (tinfo 0xda20f590)
+09-07 03:34:24.239  2182  2182 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{551c6d8 V.E...... ......ID 7,0-48,61 #7f0a041c app:id/wifi_group} during second layout pass: posting in next frame
+09-07 03:34:24.244  2182  2182 W View    : requestLayout() improperly called by StatusBarIconView(slot=mobile icon=null notification=null) during layout: running second layout pass
+09-07 03:34:24.263  2434  2714 D EGL_emulation: eglMakeCurrent: 0xed453b60: ver 2 0 (tinfo 0xe233a960)
+09-07 03:34:24.375  2666  5798 V ClearcutMetricXmitter: Transmission is done.
+09-07 03:34:24.562  1823  2077 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+09-07 03:34:24.564  1823  2077 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+09-07 03:34:24.568  9923  9958 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+09-07 03:34:24.568  9923  9958 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+09-07 03:34:24.581  9923  9958 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+09-07 03:34:24.581  9923  9958 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+09-07 03:34:24.582  9923  9958 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+09-07 03:34:24.565  9923  9923 W RenderThread: type=1400 audit(0.0:70): avc: denied { write } for name="property_service" dev="tmpfs" ino=6988 scontext=u:r:untrusted_app:s0:c135,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+09-07 03:34:24.619  2037  4510 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=ru.iteco.fmhandroid/.ui.AppActivity} from uid 10136
+09-07 03:34:24.631  2037  4510 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:24.634  2037  4510 I chatty  : uid=1000(system) Binder:2037_15 identical 38 lines
+09-07 03:34:24.634  2037  4510 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:24.635  9865  9865 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@dce2beb
+09-07 03:34:24.635  2037  4510 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:24.640  2037  4510 I chatty  : uid=1000(system) Binder:2037_15 identical 18 lines
+09-07 03:34:24.640  2037  4510 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:24.652  2666  2666 I dnsi    : onStop
+09-07 03:34:24.661  1823  2078 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+09-07 03:34:24.668  1823  2078 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+09-07 03:34:24.673  9865  9962 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+09-07 03:34:24.675  9865  9962 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+09-07 03:34:24.665  9865  9865 W RenderThread: type=1400 audit(0.0:71): avc: denied { write } for name="property_service" dev="tmpfs" ino=6988 scontext=u:r:untrusted_app:s0:c136,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0
+09-07 03:34:24.693  1823  1823 W SurfaceFlinger: couldn't log to binary event log: overflow.
+09-07 03:34:24.693  1823  1823 W SurfaceFlinger: couldn't log to binary event log: overflow.
+09-07 03:34:24.744  9865  9962 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+09-07 03:34:24.752  9865  9962 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+09-07 03:34:24.758  9865  9962 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+09-07 03:34:24.767  9865  9865 D LifecycleMonitor: Lifecycle status change: ru.iteco.fmhandroid.ui.AppActivity@bf025f4 in: PRE_ON_CREATE
+09-07 03:34:24.770  9865  9865 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+09-07 03:34:24.792  9865  9899 V FA      : onActivityCreated
+09-07 03:34:24.843  9865  9865 W teco.fmhandroi: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+09-07 03:34:24.844  9865  9865 W teco.fmhandroi: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+09-07 03:34:24.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:24.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:25.007  9865  9865 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+09-07 03:34:25.020  9865  9865 W teco.fmhandroi: Accessing hidden method Ljava/lang/invoke/MethodHandles$Lookup;-><init>(Ljava/lang/Class;I)V (greylist, reflection, allowed)
+09-07 03:34:25.160  9865  9865 D LifecycleMonitor: Lifecycle status change: ru.iteco.fmhandroid.ui.AppActivity@bf025f4 in: CREATED
+09-07 03:34:25.160  9865  9865 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=ru.iteco.fmhandroid.ui.AppActivity@bf025f4
+09-07 03:34:25.297  9865  9865 D LifecycleMonitor: Lifecycle status change: ru.iteco.fmhandroid.ui.AppActivity@bf025f4 in: STARTED
+09-07 03:34:25.298  9865  9865 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=ru.iteco.fmhandroid.ui.AppActivity@bf025f4
+09-07 03:34:25.300  9865  9865 D LifecycleMonitor: Lifecycle status change: ru.iteco.fmhandroid.ui.AppActivity@bf025f4 in: RESUMED
+09-07 03:34:25.300  9865  9865 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=ru.iteco.fmhandroid.ui.AppActivity@bf025f4
+09-07 03:34:25.300  9865  9909 V FA      : Activity resumed, time: 589193
+09-07 03:34:25.305  9865  9899 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:25.305  9865  9899 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-07 03:34:25.308  9865  9909 I FA      : Tag Manager is not found and thus will not be used
+09-07 03:34:25.314  9865  9911 W FileTestStorage: Output properties is not supported.
+09-07 03:34:25.315  9865  9911 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+09-07 03:34:25.331  9865  9911 D EventInjectionStrategy: Creating injection strategy with input manager.
+09-07 03:34:25.331  9865  9911 W teco.fmhandroi: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)
+09-07 03:34:25.332  9865  9911 W teco.fmhandroi: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)
+09-07 03:34:25.332  9865  9911 W teco.fmhandroi: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)
+09-07 03:34:25.351  9865  9960 D HostConnection: HostConnection::get() New Host Connection established 0xd6c2cf80, tid 9960
+09-07 03:34:25.364  9865  9960 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+09-07 03:34:25.371  9865  9960 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+09-07 03:34:25.377  9865  9960 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0
+09-07 03:34:25.377  9865  9960 D EGL_emulation: eglCreateContext: 0xe2250080: maj 2 min 0 rcv 2
+09-07 03:34:25.395  7867  9914 V FA-SVC  : Logging event: origin=auto,name=screen_view(_vs),params=Bundle[{ga_event_origin(_o)=auto, ga_screen_class(_sc)=AppActivity, ga_screen_id(_si)=-407995581426403538}]
+09-07 03:34:25.401  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:25.410  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9113600
+09-07 03:34:25.412  1678  1678 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+09-07 03:34:25.412  9865  9960 W Gralloc3: mapper 3.x is not supported
+09-07 03:34:25.414  9865  9960 D HostConnection: createUnique: call
+09-07 03:34:25.415  9865  9960 D HostConnection: HostConnection::get() New Host Connection established 0xd6c2eab0, tid 9960
+09-07 03:34:25.415  9865  9960 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+09-07 03:34:25.416  9865  9960 D eglCodecCommon: allocate: Ask for block of size 0x1000
+09-07 03:34:25.416  9865  9960 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ff68a000 size 0x2000
+09-07 03:34:25.417  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9113600
+09-07 03:34:25.419  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9113600
+09-07 03:34:25.420  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:25.429  7867  9914 V FA-SVC  : Upload scheduled in approximately ms: 3171681
+09-07 03:34:25.430  7867  9914 V FA-SVC  : Unscheduling upload
+09-07 03:34:25.431  9865  9960 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 1 0
+09-07 03:34:25.436  7867  9914 V FA-SVC  : Scheduling upload, millis: 3171681
+09-07 03:34:25.437  7867  9914 V FA-SVC  : Background event processing time, ms: 47
+09-07 03:34:25.496  2037  2065 I ActivityTaskManager: Displayed ru.iteco.fmhandroid/.ui.AppActivity: +1s455ms
+09-07 03:34:25.507  2182  2182 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{551c6d8 V.E...... ......ID 7,0-48,61 #7f0a041c app:id/wifi_group} during second layout pass: posting in next frame
+09-07 03:34:25.521  2182  2182 W View    : requestLayout() improperly called by StatusBarIconView(slot=mobile icon=null notification=null) during layout: running second layout pass
+09-07 03:34:25.537  9865  9911 W FileTestStorage: Test input args is not supported.
+09-07 03:34:25.542  2182  2182 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{551c6d8 V.E...... ......ID 7,0-48,61 #7f0a041c app:id/wifi_group} during second layout pass: posting in next frame
+09-07 03:34:25.555  9865  9865 W teco.fmhandroi: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+09-07 03:34:25.556  9865  9865 W teco.fmhandroi: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+09-07 03:34:25.556  9865  9865 W teco.fmhandroi: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+09-07 03:34:25.558  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe; (greylist,core-platform-api, linking, allowed)
+09-07 03:34:25.558  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->putObject(Ljava/lang/Object;JLjava/lang/Object;)V (greylist, linking, allowed)
+09-07 03:34:25.563  2182  2182 W View    : requestLayout() improperly called by StatusBarIconView(slot=mobile icon=null notification=null) during layout: running second layout pass
+09-07 03:34:25.563  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:25.563  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->getObject(Ljava/lang/Object;J)Ljava/lang/Object; (greylist, linking, allowed)
+09-07 03:34:25.569  9865  9865 W teco.fmhandroi: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+09-07 03:34:25.569  9865  9865 W teco.fmhandroi: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+09-07 03:34:25.570  9865  9865 W teco.fmhandroi: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+09-07 03:34:25.575  2182  2182 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{551c6d8 V.E...... ......ID 7,0-48,61 #7f0a041c app:id/wifi_group} during second layout pass: posting in next frame
+09-07 03:34:25.591  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Authorization" and view.getParent() view.getParent() view.getId() is <2131231186>)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:25.599  2182  2182 W View    : requestLayout() improperly called by StatusBarIconView(slot=mobile icon=null notification=null) during layout: running second layout pass
+09-07 03:34:25.613  2182  2182 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{551c6d8 V.E...... ......ID 7,0-48,61 #7f0a041c app:id/wifi_group} during second layout pass: posting in next frame
+09-07 03:34:25.628  2182  2182 W View    : requestLayout() improperly called by StatusBarIconView(slot=mobile icon=null notification=null) during layout: running second layout pass
+09-07 03:34:25.651  2182  2182 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{551c6d8 V.E...... ......ID 7,0-48,61 #7f0a041c app:id/wifi_group} during second layout pass: posting in next frame
+09-07 03:34:25.663  2182  2182 W View    : requestLayout() improperly called by StatusBarIconView(slot=mobile icon=null notification=null) during layout: running second layout pass
+09-07 03:34:25.683  2182  2182 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{551c6d8 V.E...... ......ID 7,0-48,61 #7f0a041c app:id/wifi_group} during second layout pass: posting in next frame
+09-07 03:34:25.699  2182  2182 W View    : requestLayout() improperly called by StatusBarIconView(slot=mobile icon=null notification=null) during layout: running second layout pass
+09-07 03:34:25.717  2182  2182 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{551c6d8 V.E...... ......ID 7,0-48,61 #7f0a041c app:id/wifi_group} during second layout pass: posting in next frame
+09-07 03:34:25.736  2182  2182 W View    : requestLayout() improperly called by StatusBarIconView(slot=mobile icon=null notification=null) during layout: running second layout pass
+09-07 03:34:25.814  8425  8869 I FontLog : (REDACTED) Received query %s, URI %s
+09-07 03:34:25.815  8425  8869 I FontLog : (REDACTED) Query [%s] resolved to %s
+09-07 03:34:25.816  8425  8869 I FontLog : (REDACTED) Fetch %s end status %s
+09-07 03:34:25.828  8425  8869 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+09-07 03:34:25.833  8425  8869 I FontLog : (REDACTED) Pulling font file for id = %d, cache size = %d
+09-07 03:34:25.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:25.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:25.912  8425  8439 W System  : A resource failed to call close. 
+09-07 03:34:25.912  8425  8439 W System  : A resource failed to call close. 
+09-07 03:34:26.003  8176  8271 D Volley  : [605] ice.a: HTTP response for request=<[ ] https://play-fe.googleapis.com/fdfe/getItems?nocache_qos=lt 0x4be64f9b NORMAL 9> [lifetime=4294], [size=39], [rc=200], [retryCount=1]
+09-07 03:34:26.006  8176  8250 E Finsky  : [585] rna.a(110): ItemStore: getItems RPC failed.
+09-07 03:34:26.262  2434  2940 E ActivityThread: Failed to find provider info for com.google.android.apps.wellbeing.api
+09-07 03:34:26.879  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:26.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:27.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:27.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:28.302  9865  9865 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->allocateInstance(Ljava/lang/Class;)Ljava/lang/Object; (greylist, reflection, allowed)
+09-07 03:34:28.315  9865  9973 I okhttp.OkHttpClient: --> GET http://www.981757-ca08998.tmweb.ru:8080/fmh/authentication/userInfo
+09-07 03:34:28.315  9865  9973 I okhttp.OkHttpClient: --> END GET
+09-07 03:34:28.476  1774  9974 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+09-07 03:34:28.879  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:28.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:29.162  1678  1678 E SELinux : avc:  denied  { find } for interface=android.hardware.memtrack::IMemtrack sid=u:r:priv_app:s0:c512,c768 pid=7197 scontext=u:r:priv_app:s0:c512,c768 tcontext=u:object_r:hal_memtrack_hwservice:s0 tclass=hwservice_manager permissive=0
+09-07 03:34:29.162  7197  9977 E memtrack: Couldn't load memtrack module
+09-07 03:34:29.163  7197  9977 W android.os.Debug: failed to get memory consumption info: -1
+09-07 03:34:29.879  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:29.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:30.397  9865  9909 V FA      : Inactivity, disconnecting from the service
+09-07 03:34:30.879  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:30.879  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:31.877  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:31.877  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:32.879  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:32.879  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: <-- 200 http://www.981757-ca08998.tmweb.ru:8080/fmh/authentication/userInfo (5258ms)
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: Vary: Origin
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: Vary: Access-Control-Request-Method
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: Vary: Access-Control-Request-Headers
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: X-Content-Type-Options: nosniff
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: X-XSS-Protection: 1; mode=block
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: Pragma: no-cache
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: Expires: 0
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: X-Frame-Options: DENY
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: Content-Type: application/json
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: Transfer-Encoding: chunked
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: Date: Thu, 07 Sep 2023 03:34:34 GMT
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: Keep-Alive: timeout=60
+09-07 03:34:33.574  9865  9973 I okhttp.OkHttpClient: Connection: keep-alive
+09-07 03:34:33.576  9865  9973 I okhttp.OkHttpClient: {"id":1,"firstName":"Ivan","lastName":"Ivanov","middleName":"Ivanovich","admin":true}
+09-07 03:34:33.576  9865  9973 I okhttp.OkHttpClient: <-- END HTTP (85-byte body)
+09-07 03:34:33.600  9865  9982 I okhttp.OkHttpClient: --> GET http://www.981757-ca08998.tmweb.ru:8080/fmh/claims
+09-07 03:34:33.600  9865  9982 I okhttp.OkHttpClient: --> END GET
+09-07 03:34:33.602  1774  9983 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+09-07 03:34:33.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:33.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:34.408  9865  9865 I Choreographer: Skipped 48 frames!  The application may be doing too much work on its main thread.
+09-07 03:34:34.448  2182  2182 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{551c6d8 V.E...... ......ID 7,0-48,61 #7f0a041c app:id/wifi_group} during second layout pass: posting in next frame
+09-07 03:34:34.451  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:34.455  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:34.465  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:34.473  2182  2182 W View    : requestLayout() improperly called by StatusBarIconView(slot=mobile icon=null notification=null) during layout: running second layout pass
+09-07 03:34:34.644  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:34.646  9865  9960 I OpenGLRenderer: Davey! duration=1045ms; Flags=1, IntendedVsync=597492540887, Vsync=598292540855, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=598301765800, AnimationStart=598302274300, PerformTraversalsStart=598302392600, DrawStart=598356397700, SyncQueued=598357832900, SyncStart=598359362600, IssueDrawCommandsStart=598359489600, SwapBuffers=598502888000, FrameCompleted=598539582100, DequeueBufferDuration=1482000, QueueBufferDuration=524000, 
+09-07 03:34:34.666  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:34.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:34.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:35.405  7867  7867 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+09-07 03:34:35.409  2037  2065 E memtrack: Couldn't load memtrack module
+09-07 03:34:35.409  2037  2065 W android.os.Debug: failed to get memory consumption info: -1
+09-07 03:34:35.645  9865  9865 D takeScreenshot: Found 1 global views to redraw
+09-07 03:34:35.696  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:35.700  1678  1678 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+09-07 03:34:35.701  9846  9864 W Gralloc3: mapper 3.x is not supported
+09-07 03:34:35.730  9846  9864 D HostConnection: createUnique: call
+09-07 03:34:35.730  9846  9864 D HostConnection: HostConnection::get() New Host Connection established 0xeffca4e0, tid 9864
+09-07 03:34:35.739  9846  9864 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+09-07 03:34:35.740  9846  9864 D eglCodecCommon: allocate: Ask for block of size 0x1000
+09-07 03:34:35.740  9846  9864 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffff6000 size 0x2000
+09-07 03:34:35.744  1823  1896 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+09-07 03:34:35.744  1823  1896 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+09-07 03:34:35.746  9846  9991 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+09-07 03:34:35.751  9846  9991 W libc    : Unable to set property "qemu.gles" to "1": error code: 0x18
+09-07 03:34:35.751  9846  9991 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+09-07 03:34:35.751  9846  9991 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+09-07 03:34:35.752  9846  9991 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+09-07 03:34:35.757  9846  9991 D HostConnection: HostConnection::get() New Host Connection established 0xeffca3f0, tid 9991
+09-07 03:34:35.759  9846  9991 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+09-07 03:34:35.760  9846  9991 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+09-07 03:34:35.765  9846  9991 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0
+09-07 03:34:35.765  9846  9991 D EGL_emulation: eglCreateContext: 0xdad28360: maj 2 min 0 rcv 2
+09-07 03:34:35.779  9846  9991 D EGL_emulation: eglMakeCurrent: 0xdad28360: ver 2 0 (tinfo 0xdad0f380)
+09-07 03:34:35.788  9846  9991 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 1 0
+09-07 03:34:35.879  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:35.879  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: Failed to take screenshot
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: java.io.FileNotFoundException: view-op-error-1.png: open failed: EROFS (Read-only file system)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at libcore.io.IoBridge.open(IoBridge.java:496)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:125)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at androidx.test.platform.io.FileTestStorage.openOutputFile(FileTestStorage.java:60)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at androidx.test.core.graphics.BitmapStorage.writeToTestStorage(BitmapStorageExt.kt:49)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at androidx.test.espresso.base.DefaultFailureHandler.takeScreenshot(DefaultFailureHandler.java:4)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:3)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:8)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at ru.iteco.fmhandroid.ui.data.TestUtils.waitView(TestUtils.java:61)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at ru.iteco.fmhandroid.ui.steps.AuthSteps.isAuthScreen(AuthSteps.java:58)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at ru.iteco.fmhandroid.ui.ControlPanelTest.logoutCheckAndOpenControlPanelPage(ControlPanelTest.java:58)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at java.lang.reflect.Method.invoke(Native Method)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at androidx.test.internal.runner.junit4.statement.RunBefores.evaluate(RunBefores.java:76)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at io.qameta.allure.android.rules.ScreenshotRule$apply$1.evaluate(ScreenshotRule.kt:22)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at io.qameta.allure.android.rules.LogcatRule$apply$1.evaluate(LogcatRule.kt:23)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at io.qameta.allure.android.runners.AllureAndroidJUnit4.run(AllureAndroidJUnitRunners.kt:29)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:67)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:58)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:438)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: Caused by: android.system.ErrnoException: open failed: EROFS (Read-only file system)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at libcore.io.Linux.open(Native Method)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:252)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7255)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	at libcore.io.IoBridge.open(IoBridge.java:482)
+09-07 03:34:35.879  9865  9911 W DefaultFailureHandler: 	... 50 more
+09-07 03:34:35.881  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:35.883  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <view.getId() is <2131230870>> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:35.885  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:35.886  9865  9865 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131230870/ru.iteco.fmhandroid:id/authorization_image_button>
+09-07 03:34:35.889  9865  9911 W teco.fmhandroi: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+09-07 03:34:35.892  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:35.894  9865  9994 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:35.894  9865  9865 I ViewInteraction: Performing 'single click' action on view view.getId() is <2131230870/ru.iteco.fmhandroid:id/authorization_image_button>
+09-07 03:34:35.949  1781  6116 W audio_hw_generic: Not supplying enough data to HAL, expected position 5904064 , only wrote 5904052
+09-07 03:34:35.983  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 884736
+09-07 03:34:35.987  1793  1793 I chatty  : uid=1000(system) allocator@2.0-s identical 1 line
+09-07 03:34:35.988  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 884736
+09-07 03:34:35.990  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:36.004  9865  9960 I chatty  : uid=10136(ru.iteco.fmhandroid) RenderThread identical 2 lines
+09-07 03:34:36.031  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:36.253  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.259  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Log out"> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.262  9865  9865 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Log out"
+09-07 03:34:36.264  9865  9865 I ViewInteraction: Performing 'single click' action on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Log out"
+09-07 03:34:36.331  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:36.481  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:36.508  8425  8425 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.nearby.exposurenotification.START dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+09-07 03:34:36.520  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:36.611  9865  9994 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.613  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Authorization" and view.getParent() view.getParent() view.getId() is <2131231186>)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.614  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.616  9865  9865 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Authorization" and view.getParent() view.getParent() view.getId() is <2131231186/ru.iteco.fmhandroid:id/nav_host_fragment>)
+09-07 03:34:36.617  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.617  9865  9994 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.618  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(an instance of android.widget.TextView and view.getHint() matching: is "Login" and view.getParent() view.getParent() view.getId() is <2131231121>)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.619  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.620  9865  9865 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (an instance of android.widget.TextView and view.getHint() matching: is "Login" and view.getParent() view.getParent() view.getId() is <2131231121/ru.iteco.fmhandroid:id/login_text_input_layout>)
+09-07 03:34:36.621  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.621  9865  9994 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.623  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(an instance of android.widget.TextView and view.getHint() matching: is "Password" and view.getParent() view.getParent() view.getId() is <2131231264>)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.623  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.625  9865  9865 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (an instance of android.widget.TextView and view.getHint() matching: is "Password" and view.getParent() view.getParent() view.getId() is <2131231264/ru.iteco.fmhandroid:id/password_text_input_layout>)
+09-07 03:34:36.626  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.626  9865  9994 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.627  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(view.getId() is <2131231039> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "SIGN IN" and view.getContentDescription() is "Save" and view.getParent() view.getParent() an instance of android.widget.RelativeLayout)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.629  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.630  9865  9865 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (view.getId() is <2131231039/ru.iteco.fmhandroid:id/enter_button> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "SIGN IN" and view.getContentDescription() is "Save" and view.getParent() view.getParent() an instance of android.widget.RelativeLayout)
+09-07 03:34:36.631  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.633  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Authorization" and view.getParent() view.getParent() view.getId() is <2131231186>)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.634  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.636  9865  9865 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (an instance of android.widget.TextView and view.getText() with or without transformation to match: is "Authorization" and view.getParent() view.getParent() view.getId() is <2131231186/ru.iteco.fmhandroid:id/nav_host_fragment>)
+09-07 03:34:36.636  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.638  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(an instance of android.widget.TextView and view.getHint() matching: is "Login" and view.getParent() view.getParent() view.getId() is <2131231121/ru.iteco.fmhandroid:id/login_text_input_layout>)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.639  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.639  9865  9994 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.640  9865  9865 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (an instance of android.widget.TextView and view.getHint() matching: is "Login" and view.getParent() view.getParent() view.getId() is <2131231121/ru.iteco.fmhandroid:id/login_text_input_layout>)
+09-07 03:34:36.640  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.642  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(an instance of android.widget.TextView and view.getHint() matching: is "Password" and view.getParent() view.getParent() view.getId() is <2131231264/ru.iteco.fmhandroid:id/password_text_input_layout>)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.643  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.645  9865  9865 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (an instance of android.widget.TextView and view.getHint() matching: is "Password" and view.getParent() view.getParent() view.getId() is <2131231264/ru.iteco.fmhandroid:id/password_text_input_layout>)
+09-07 03:34:36.645  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.650  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(view.getId() is <2131231039/ru.iteco.fmhandroid:id/enter_button> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "SIGN IN" and view.getContentDescription() is "Save" and view.getParent() view.getParent() an instance of android.widget.RelativeLayout)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.651  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.652  9865  9994 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.653  9865  9865 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view (view.getId() is <2131231039/ru.iteco.fmhandroid:id/enter_button> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "SIGN IN" and view.getContentDescription() is "Save" and view.getParent() view.getParent() an instance of android.widget.RelativeLayout)
+09-07 03:34:36.654  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.656  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(an instance of android.widget.TextView and view.getHint() matching: is "Login" and view.getParent() view.getParent() view.getId() is <2131231121/ru.iteco.fmhandroid:id/login_text_input_layout>)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.657  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.659  9865  9865 I ViewInteraction: Performing 'replace text(login2)' action on view (an instance of android.widget.TextView and view.getHint() matching: is "Login" and view.getParent() view.getParent() view.getId() is <2131231121/ru.iteco.fmhandroid:id/login_text_input_layout>)
+09-07 03:34:36.673  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.698  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(an instance of android.widget.TextView and view.getHint() matching: is "Password" and view.getParent() view.getParent() view.getId() is <2131231264/ru.iteco.fmhandroid:id/password_text_input_layout>)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.698  7867  7867 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.feedback.internal.IFeedbackService dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsBoundBrokerService }
+09-07 03:34:36.712  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.715  9865  9865 I ViewInteraction: Performing 'replace text(password2)' action on view (an instance of android.widget.TextView and view.getHint() matching: is "Password" and view.getParent() view.getParent() view.getId() is <2131231264/ru.iteco.fmhandroid:id/password_text_input_layout>)
+09-07 03:34:36.722  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.732  8425  8425 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.icing.LIGHTWEIGHT_INDEX_SERVICE dat=chimera-action: cmp=com.google.android.gms/.chimera.PersistentApiService }
+09-07 03:34:36.734  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(view.getId() is <2131231039/ru.iteco.fmhandroid:id/enter_button> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "SIGN IN" and view.getContentDescription() is "Save" and view.getParent() view.getParent() an instance of android.widget.RelativeLayout)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.736  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.750  9865  9865 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=view.isClickable() is <true>}' assertion on view (view.getId() is <2131231039/ru.iteco.fmhandroid:id/enter_button> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "SIGN IN" and view.getContentDescription() is "Save" and view.getParent() view.getParent() an instance of android.widget.RelativeLayout)
+09-07 03:34:36.751  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.762  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(view.getId() is <2131231039/ru.iteco.fmhandroid:id/enter_button> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "SIGN IN" and view.getContentDescription() is "Save" and view.getParent() view.getParent() an instance of android.widget.RelativeLayout)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.764  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.764  9865  9994 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.767  9865  9865 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=view.isClickable() is <true>}' assertion on view (view.getId() is <2131231039/ru.iteco.fmhandroid:id/enter_button> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "SIGN IN" and view.getContentDescription() is "Save" and view.getParent() view.getParent() an instance of android.widget.RelativeLayout)
+09-07 03:34:36.768  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.771  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <(view.getId() is <2131231039/ru.iteco.fmhandroid:id/enter_button> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "SIGN IN" and view.getContentDescription() is "Save" and view.getParent() view.getParent() an instance of android.widget.RelativeLayout)> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:36.773  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:36.774  9865  9865 I ViewInteraction: Performing 'single click' action on view (view.getId() is <2131231039/ru.iteco.fmhandroid:id/enter_button> and an instance of android.widget.TextView and view.getText() with or without transformation to match: is "SIGN IN" and view.getContentDescription() is "Save" and view.getParent() view.getParent() an instance of android.widget.RelativeLayout)
+09-07 03:34:36.833  9865  9999 I okhttp.OkHttpClient: --> POST http://www.981757-ca08998.tmweb.ru:8080/fmh/authentication/login
+09-07 03:34:36.833  9865  9999 I okhttp.OkHttpClient: Content-Type: application/json; charset=UTF-8
+09-07 03:34:36.833  9865  9999 I okhttp.OkHttpClient: Content-Length: 41
+09-07 03:34:36.833  9865  9999 I okhttp.OkHttpClient: {"login":"login2","password":"password2"}
+09-07 03:34:36.833  9865  9999 I okhttp.OkHttpClient: --> END POST (41-byte body)
+09-07 03:34:36.835  1774 10000 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+09-07 03:34:36.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:36.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:37.058  9865  9911 W teco.fmhandroi: Accessing hidden method Lsun/misc/Unsafe;->compareAndSwapObject(Ljava/lang/Object;JLjava/lang/Object;Ljava/lang/Object;)Z (greylist, linking, allowed)
+09-07 03:34:37.060  9865  9865 I ViewInteraction: Performing 'wait for a specific view with <an instance of android.widget.TextView and view.getText() with or without transformation to match: is "News"> during 10000 millis.' action on view view.getRootView() to equal view
+09-07 03:34:37.879  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:37.879  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:38.879  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:38.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:39.133  7867  7867 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.checkin.START pkg=com.google.android.gms }
+09-07 03:34:39.716  8176  8250 I Finsky  : [585] xty.accept(378): SCH: Scheduling phonesky job Id: 12-1, CT: 1694057661633, Constraints: [{ L: 15000, D: 86400000, C: 1, I: 1, N: 1 }]
+09-07 03:34:39.725  8176  8257 I Finsky  : [592] yew.apply(123): SCH: Scheduling 1 system job(s)
+09-07 03:34:39.725  8176  8257 I Finsky  : [592] yvz.d(263): SCH: Scheduling system job Id: 9038, L: 0, D: 73282904, C: false, I: false, N: 1
+09-07 03:34:39.728  7867  7867 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+09-07 03:34:39.735  8176  8176 I Finsky  : [2] yxo.onStartJob(132): SCH: job service start with id 9038.
+09-07 03:34:39.739  8176  8256 I Finsky  : [591] xty.accept(378): SCH: Scheduling phonesky job Id: 12-1, CT: 1694057661594, Constraints: [{ L: 15000, D: 86400000, C: 1, I: 1, N: 1 }]
+09-07 03:34:39.740  8176  8246 I Finsky  : [581] kiz.aeG(143): [ContentSync] finished, scheduled=true
+09-07 03:34:39.744  8176  9828 I Finsky  : [719] yvx.a(769): SCH: Satisfied jobs for 9038 are: 12-1
+09-07 03:34:39.745  8176  8256 I Finsky  : [591] yew.apply(123): SCH: Scheduling 0 system job(s)
+09-07 03:34:39.745  8176  8256 I Finsky  : [591] kiz.aeG(143): [ContentSync] finished, scheduled=true
+09-07 03:34:39.748  8176 10003 I Finsky  : [725] ywl.accept(764): SCH: Job 12-1 starting
+09-07 03:34:39.748  8176  8176 I Finsky  : [2] ContentSyncJob.v(14): [ContentSync] job started
+09-07 03:34:39.854  8176 10004 I Finsky  : [726] tcy.p(41): Completed 0 account content syncs with 0 successful.
+09-07 03:34:39.854  8176  8176 I Finsky  : [2] ContentSyncJob.a(14): [ContentSync] Installation state replication succeeded.
+09-07 03:34:39.855  8176  8176 I Finsky  : [2] ywb.r(83): SCH: jobFinished: 12-1. TimeElapsed: 106ms.
+09-07 03:34:39.878  8176  8256 I Finsky  : [591] xty.accept(378): SCH: Scheduling phonesky job Id: 1-1337, CT: 1694057295644, Constraints: [{ L: 30466985, D: 73666985, C: 1, I: 1, N: 1 }]
+09-07 03:34:39.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:39.878  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:39.880  8176  8256 I Finsky  : [591] xty.accept(378): SCH: Scheduling phonesky job Id: 10-4, CT: 1694057295294, Constraints: [{ L: 1200000, D: 86400000, C: 1, I: 1, N: 1 }]
+09-07 03:34:39.880  8176  8256 I Finsky  : [591] xty.accept(378): SCH: Scheduling phonesky job Id: 10-11, CT: 1694057295294, Constraints: [{ L: 600000, D: 86400000, C: 1, I: 1, N: 1 }]
+09-07 03:34:39.880  8176  8256 I Finsky  : [591] xty.accept(378): SCH: Scheduling phonesky job Id: 10-26, CT: 1694057295295, Constraints: [{ L: 600000, D: 86400000, C: 1, I: 1, N: 1 }]
+09-07 03:34:39.886  8176  8257 I Finsky  : [592] yew.apply(123): SCH: Scheduling 1 system job(s)
+09-07 03:34:39.886  8176  8257 I Finsky  : [592] yvz.d(263): SCH: Scheduling system job Id: 9044, L: 215408, D: 73282743, C: false, I: false, N: 1
+09-07 03:34:39.892  8176 10003 I Finsky  : [725] yxo.a(17): SCH: job service finished with id 9038.
+09-07 03:34:39.953  1781  1887 W audio_hw_generic: Not supplying enough data to HAL, expected position 6255411 , only wrote 6080539
+09-07 03:34:40.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:40.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:41.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:41.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:42.882  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:42.882  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:43.722  9865  9982 I okhttp.OkHttpClient: <-- HTTP FAILED: java.net.SocketTimeoutException: timeout
+09-07 03:34:43.726  9865  9865 W System.err: ru.iteco.fmhandroid.exceptions.ServerException
+09-07 03:34:43.726  9865  9865 W System.err: 	at ru.iteco.fmhandroid.utils.Utils.makeRequest(Utils.kt:119)
+09-07 03:34:43.726  9865  9865 W System.err: 	at ru.iteco.fmhandroid.utils.Utils$makeRequest$1.invokeSuspend(Unknown Source:15)
+09-07 03:34:43.726  9865  9865 W System.err: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+09-07 03:34:43.726  9865  9865 W System.err: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+09-07 03:34:43.726  9865  9865 W System.err: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-07 03:34:43.726  9865  9865 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-07 03:34:43.727  9865  9865 W System.err: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+09-07 03:34:43.727  9865  9865 W System.err: 	at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)
+09-07 03:34:43.727  9865  9865 W System.err: 	at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:1)
+09-07 03:34:43.727  9865  9865 W System.err: 	at androidx.test.espresso.base.UiControllerImpl.loopMainThreadForAtLeast(UiControllerImpl.java:7)
+09-07 03:34:43.727  9865  9865 W System.err: 	at ru.iteco.fmhandroid.ui.data.ViewActions$1.perform(ViewActions.java:48)
+09-07 03:34:43.727  9865  9865 W System.err: 	at androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:2)
+09-07 03:34:43.727  9865  9865 W System.err: 	at androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:25)
+09-07 03:34:43.727  9865  9865 W System.err: 	at androidx.test.espresso.ViewInteraction.-$$Nest$mdoPerform(Unknown Source:0)
+09-07 03:34:43.727  9865  9865 W System.err: 	at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:7)
+09-07 03:34:43.727  9865  9865 W System.err: 	at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)
+09-07 03:34:43.727  9865  9865 W System.err: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+09-07 03:34:43.727  9865  9865 W System.err: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-07 03:34:43.728  9865  9865 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-07 03:34:43.728  9865  9865 W System.err: 	at android.os.Looper.loop(Looper.java:214)
+09-07 03:34:43.728  9865  9865 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:7356)
+09-07 03:34:43.728  9865  9865 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+09-07 03:34:43.728  9865  9865 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+09-07 03:34:43.728  9865  9865 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+09-07 03:34:43.881  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:43.881  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:44.748  1937  1937 E netmgr  : Failed to open QEMU pipe 'qemud:network': Invalid argument
+09-07 03:34:44.881  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:44.881  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:44.949  1939  1939 E wifi_forwarder: RemoteConnection failed to initialize: RemoteConnection failed to open pipe
+09-07 03:34:45.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:45.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:46.882  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:46.882  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:46.978  9865  9999 I okhttp.OkHttpClient: <-- HTTP FAILED: java.net.SocketTimeoutException: timeout
+09-07 03:34:46.982  9865  9865 W System.err: ru.iteco.fmhandroid.exceptions.ServerException
+09-07 03:34:46.982  9865  9865 W System.err: 	at ru.iteco.fmhandroid.utils.Utils.makeRequest(Utils.kt:119)
+09-07 03:34:46.983  9865  9865 W System.err: 	at ru.iteco.fmhandroid.utils.Utils$makeRequest$1.invokeSuspend(Unknown Source:15)
+09-07 03:34:46.984  9865  9865 W System.err: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+09-07 03:34:46.984  9865  9865 W System.err: 	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:104)
+09-07 03:34:46.984  9865  9865 W System.err: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-07 03:34:46.984  9865  9865 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-07 03:34:46.984  9865  9865 W System.err: 	at androidx.test.espresso.base.Interrogator.loopAndInterrogate(Interrogator.java:14)
+09-07 03:34:46.984  9865  9865 W System.err: 	at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:8)
+09-07 03:34:46.984  9865  9865 W System.err: 	at androidx.test.espresso.base.UiControllerImpl.loopUntil(UiControllerImpl.java:1)
+09-07 03:34:46.984  9865  9865 W System.err: 	at androidx.test.espresso.base.UiControllerImpl.loopMainThreadForAtLeast(UiControllerImpl.java:7)
+09-07 03:34:46.985  9865  9865 W System.err: 	at ru.iteco.fmhandroid.ui.data.ViewActions$1.perform(ViewActions.java:48)
+09-07 03:34:46.985  9865  9865 W System.err: 	at androidx.test.espresso.ViewInteraction$SingleExecutionViewAction.perform(ViewInteraction.java:2)
+09-07 03:34:46.985  9865  9865 W System.err: 	at androidx.test.espresso.ViewInteraction.doPerform(ViewInteraction.java:25)
+09-07 03:34:46.985  9865  9865 W System.err: 	at androidx.test.espresso.ViewInteraction.-$$Nest$mdoPerform(Unknown Source:0)
+09-07 03:34:46.985  9865  9865 W System.err: 	at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:7)
+09-07 03:34:46.985  9865  9865 W System.err: 	at androidx.test.espresso.ViewInteraction$1.call(ViewInteraction.java:1)
+09-07 03:34:46.985  9865  9865 W System.err: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+09-07 03:34:46.985  9865  9865 W System.err: 	at android.os.Handler.handleCallback(Handler.java:883)
+09-07 03:34:46.985  9865  9865 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+09-07 03:34:46.986  9865  9865 W System.err: 	at android.os.Looper.loop(Looper.java:214)
+09-07 03:34:46.986  9865  9865 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:7356)
+09-07 03:34:46.986  9865  9865 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+09-07 03:34:46.986  9865  9865 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:492)
+09-07 03:34:46.986  9865  9865 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:930)
+09-07 03:34:46.995  2037  2065 E memtrack: Couldn't load memtrack module
+09-07 03:34:46.995  2037  2065 W android.os.Debug: failed to get memory consumption info: -1
+09-07 03:34:46.999  2037  2065 E memtrack: Couldn't load memtrack module
+09-07 03:34:46.999  2037  2065 W android.os.Debug: failed to get memory consumption info: -1
+09-07 03:34:47.001  2037  2065 E memtrack: Couldn't load memtrack module
+09-07 03:34:47.001  2037  2065 W android.os.Debug: failed to get memory consumption info: -1
+09-07 03:34:47.026  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 438272
+09-07 03:34:47.031  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 438272
+09-07 03:34:47.033  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:47.041  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 438272
+09-07 03:34:47.098  9865  9865 D takeScreenshot: Found 2 global views to redraw
+09-07 03:34:47.104  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:47.126  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:47.143  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: Failed to take screenshot
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: java.io.FileNotFoundException: view-op-error-2.png: open failed: EROFS (Read-only file system)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at libcore.io.IoBridge.open(IoBridge.java:496)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:125)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at androidx.test.platform.io.FileTestStorage.openOutputFile(FileTestStorage.java:60)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at androidx.test.core.graphics.BitmapStorage.writeToTestStorage(BitmapStorageExt.kt:49)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at androidx.test.espresso.base.DefaultFailureHandler.takeScreenshot(DefaultFailureHandler.java:4)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:3)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:8)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at androidx.test.espresso.ViewInteraction.desugaredPerform(ViewInteraction.java:11)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at androidx.test.espresso.ViewInteraction.perform(ViewInteraction.java:8)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at ru.iteco.fmhandroid.ui.data.TestUtils.waitView(TestUtils.java:61)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at ru.iteco.fmhandroid.ui.steps.MainPageSteps.isMainPage(MainPageSteps.java:50)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at ru.iteco.fmhandroid.ui.ControlPanelTest.logoutCheckAndOpenControlPanelPage(ControlPanelTest.java:63)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at java.lang.reflect.Method.invoke(Native Method)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at androidx.test.internal.runner.junit4.statement.RunBefores.evaluate(RunBefores.java:76)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at io.qameta.allure.android.rules.ScreenshotRule$apply$1.evaluate(ScreenshotRule.kt:22)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at io.qameta.allure.android.rules.LogcatRule$apply$1.evaluate(LogcatRule.kt:23)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at androidx.test.ext.junit.runners.AndroidJUnit4.run(AndroidJUnit4.java:162)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at io.qameta.allure.android.runners.AllureAndroidJUnit4.run(AllureAndroidJUnitRunners.kt:29)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:67)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:58)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:438)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2189)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: Caused by: android.system.ErrnoException: open failed: EROFS (Read-only file system)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at libcore.io.Linux.open(Native Method)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:252)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:167)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at android.app.ActivityThread$AndroidOs.open(ActivityThread.java:7255)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	at libcore.io.IoBridge.open(IoBridge.java:482)
+09-07 03:34:47.182  9865  9911 W DefaultFailureHandler: 	... 50 more
+09-07 03:34:47.189  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:41.282  2434  2940 E ActivityThread: Failed to find provider info for com.google.android.apps.wellbeing.api
+09-07 03:34:47.429  2037  6130 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=ru.iteco.fmhandroid.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} from uid 10136
+09-07 03:34:47.434  9865  9909 V FA      : Recording user engagement, ms: 22133
+09-07 03:34:47.434  9865  9865 D LifecycleMonitor: Lifecycle status change: ru.iteco.fmhandroid.ui.AppActivity@bf025f4 in: PAUSED
+09-07 03:34:47.434  9865  9865 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=ru.iteco.fmhandroid.ui.AppActivity@bf025f4
+09-07 03:34:47.435  2037  6130 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:47.437  2037  6130 I chatty  : uid=1000(system) Binder:2037_1A identical 38 lines
+09-07 03:34:47.437  2037  6130 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:47.437  9923  9923 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@d6eec89
+09-07 03:34:47.439  2037  6130 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:47.439  2037  6130 I chatty  : uid=1000(system) Binder:2037_1A identical 8 lines
+09-07 03:34:47.439  2037  6130 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:47.460  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:47.479  9923  9956 D HostConnection: HostConnection::get() New Host Connection established 0xd6c2ae10, tid 9956
+09-07 03:34:47.487  9923  9956 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+09-07 03:34:47.490  9923  9956 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+09-07 03:34:47.496  2037  5231 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=ru.iteco.fmhandroid.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} from uid 10136
+09-07 03:34:47.505  9923  9956 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0
+09-07 03:34:47.505  9923  9956 D EGL_emulation: eglCreateContext: 0xed47ece0: maj 2 min 0 rcv 2
+09-07 03:34:47.528  9923  9956 D EGL_emulation: eglMakeCurrent: 0xed47ece0: ver 2 0 (tinfo 0xed489550)
+09-07 03:34:47.536  9865  9909 V FA      : Connecting to remote service
+09-07 03:34:47.542  7867  7867 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+09-07 03:34:47.542  9865  9909 V FA      : Connection attempt already in progress
+09-07 03:34:47.542  7867  7867 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.measurement.START pkg=com.google.android.gms }
+09-07 03:34:47.542  9865  9909 V FA      : Activity paused, time: 611326
+09-07 03:34:47.544  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:47.548  1678  1678 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+09-07 03:34:47.548  9923  9956 W Gralloc3: mapper 3.x is not supported
+09-07 03:34:47.549  9923  9956 D HostConnection: createUnique: call
+09-07 03:34:47.550  9923  9956 D HostConnection: HostConnection::get() New Host Connection established 0xd6c2c490, tid 9956
+09-07 03:34:47.550  9923  9956 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+09-07 03:34:47.550  9923  9956 D eglCodecCommon: allocate: Ask for block of size 0x1000
+09-07 03:34:47.550  9923  9956 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ff686000 size 0x2000
+09-07 03:34:47.551  9865  9909 D FA      : Connected to remote service
+09-07 03:34:47.551  9865  9909 V FA      : Processing queued up service tasks: 2
+09-07 03:34:47.552  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:47.553  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:47.554  9923  9956 D EGL_emulation: eglMakeCurrent: 0xed47ece0: ver 2 0 (tinfo 0xed489550)
+09-07 03:34:47.555  9923  9956 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 1 0
+09-07 03:34:47.565  7867  9914 V FA-SVC  : Logging event: origin=auto,name=user_engagement(_e),params=Bundle[{ga_event_origin(_o)=auto, engagement_time_msec(_et)=22133, ga_screen_class(_sc)=AppActivity, ga_screen_id(_si)=-407995581426403538}]
+09-07 03:34:47.576  7867  9914 V FA-SVC  : Upload scheduled in approximately ms: 3149534
+09-07 03:34:47.577  7867  9914 V FA-SVC  : Unscheduling upload
+09-07 03:34:47.579  7867  9914 V FA-SVC  : Scheduling upload, millis: 3149534
+09-07 03:34:47.581  7867  9914 V FA-SVC  : Background event processing time, ms: 16
+09-07 03:34:47.641  2037  4613 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:47.644  2037  4613 I chatty  : uid=1000(system) Binder:2037_16 identical 48 lines
+09-07 03:34:47.644  2037  4613 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:47.665  9923  9923 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@ee74d3e
+09-07 03:34:47.677  2037  4613 W ActivityTaskManager: Duplicate finish request for ActivityRecord{f76986f u0 ru.iteco.fmhandroid/.ui.AppActivity t660 f}
+09-07 03:34:47.690  2037  4613 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:47.690  2037  4613 I chatty  : uid=1000(system) Binder:2037_16 identical 8 lines
+09-07 03:34:47.690  2037  4613 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:47.710  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:47.750  1793  1793 I chatty  : uid=1000(system) allocator@2.0-s identical 1 line
+09-07 03:34:47.751  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:47.755  9923  9956 D EGL_emulation: eglMakeCurrent: 0xed47ece0: ver 2 0 (tinfo 0xed489550)
+09-07 03:34:47.780  2037  4613 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:47.780  2037  4613 I chatty  : uid=1000(system) Binder:2037_16 identical 8 lines
+09-07 03:34:47.780  2037  4613 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:47.788  1823  1823 W SurfaceFlinger: couldn't log to binary event log: overflow.
+09-07 03:34:47.802  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:47.803  2037  2037 W ActivityManager: Unable to start service Intent { act=android.service.appprediction.AppPredictionService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService } U=0: not found
+09-07 03:34:47.803  2037  2037 W RemoteAppPredictionService: could not bind to Intent { act=android.service.appprediction.AppPredictionService cmp=com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiPredictionService } using flags 67108865
+09-07 03:34:47.809  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:47.810  1793  2554 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:47.819  2666  3068 D EGL_emulation: eglMakeCurrent: 0xda21b0e0: ver 2 0 (tinfo 0xda20fbb0)
+09-07 03:34:47.822  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:47.843  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:47.847  2666  2666 I dnsi    : onStart
+09-07 03:34:47.850  2666  2666 I dnsi    : onResume
+09-07 03:34:47.850  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 9850880
+09-07 03:34:47.852  2434  2714 D EGL_emulation: eglMakeCurrent: 0xed453b60: ver 2 0 (tinfo 0xe233a960)
+09-07 03:34:47.859  7867  7867 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+09-07 03:34:47.859  7867  7867 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.inappreach.service.START dat=chimera-action: cmp=com.google.android.gms/.chimera.GmsApiService }
+09-07 03:34:47.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: a: input svInfo.flags is 8
+09-07 03:34:47.880  1792  2272 E GnssHAL_GnssInterface: gnssSvStatusCb: b: input svInfo.flags is 8
+09-07 03:34:47.891  2037  2061 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:47.892  2037  2061 I chatty  : uid=1000(system) android.anim identical 8 lines
+09-07 03:34:47.892  2037  2061 W InputReader: Device has associated, but no associated display id.
+09-07 03:34:47.894  1793  1793 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 6307840
+09-07 03:34:47.898  2182  2468 D EGL_emulation: eglMakeCurrent: 0xda21a360: ver 2 0 (tinfo 0xda20f590)
+09-07 03:34:47.903  2182  2182 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{551c6d8 V.E...... ......ID 7,0-48,61 #7f0a041c app:id/wifi_group} during second layout pass: posting in next frame
+09-07 03:34:47.914  9923  9956 D EGL_emulation: eglMakeCurrent: 0xed47ece0: ver 2 0 (tinfo 0xed489550)
+09-07 03:34:47.916  2182  2182 W View    : requestLayout() improperly called by StatusBarIconView(slot=mobile icon=null notification=null) during layout: running second layout pass
+09-07 03:34:47.919  9865  9960 D EGL_emulation: eglMakeCurrent: 0xe2250080: ver 2 0 (tinfo 0xe2336220)
+09-07 03:34:47.921  2182  2468 D EGL_emulation: eglMakeCurrent: 0xda21a360: ver 2 0 (tinfo 0xda20f590)
+09-07 03:34:47.934  1823  1823 E Layer   : [Surface(name=AppWindowToken{459e199 token=Token{b961ae0 ActivityRecord{53be0e3 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t652}}})/@0xafc1306 - animation-leash#0] No local sync point found
+09-07 03:34:47.934  1823  1823 E Layer   : [Surface(name=AppWindowToken{7716205 token=Token{ccae97c ActivityRecord{f76986f u0 ru.iteco.fmhandroid/.ui.AppActivity t660}}})/@0x3b47c16 - animation-leash#0] No local sync point found
+09-07 03:34:47.945  2037  5599 D HostConnection: HostConnection::get() New Host Connection established 0xda23f020, tid 5599
+09-07 03:34:47.951  2037  5599 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV420_888_to_NV21 ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2 
+09-07 03:34:47.952  2037  5599 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+09-07 03:34:47.954  9865  9865 D LifecycleMonitor: Lifecycle status change: ru.iteco.fmhandroid.ui.AppActivity@bf025f4 in: STOPPED
+09-07 03:34:47.955  9865  9865 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=ru.iteco.fmhandroid.ui.AppActivity@bf025f4
+09-07 03:34:47.962  2037  5599 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 0 0
+09-07 03:34:47.962  2037  5599 D EGL_emulation: eglCreateContext: 0xa7a623a0: maj 2 min 0 rcv 2
+09-07 03:34:47.985  2037  5599 D EGL_emulation: eglMakeCurrent: 0xa7a623a0: ver 2 0 (tinfo 0xba668ca0)
+09-07 03:34:47.989  2182  2468 D EGL_emulation: eglMakeCurrent: 0xda21a360: ver 2 0 (tinfo 0xda20f590)
+09-07 03:34:47.989  2182  2182 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{551c6d8 V.E...... ......ID 7,0-48,61 #7f0a041c app:id/wifi_group} during second layout pass: posting in next frame
+09-07 03:34:48.002  2037  5599 D eglCodecCommon: setVertexArrayObject: set vao to 0 (0) 1 0
+09-07 03:34:48.005  2182  2182 W View    : requestLayout() improperly called by StatusBarIconView(slot=mobile icon=null notification=null) during layout: running second layout pass
+09-07 03:34:48.013  2182  2468 D EGL_emulation: eglMakeCurrent: 0xda21a360: ver 2 0 (tinfo 0xda20f590)
+09-07 03:34:48.021  9865  9865 D LifecycleMonitor: Lifecycle status change: ru.iteco.fmhandroid.ui.AppActivity@bf025f4 in: DESTROYED
+09-07 03:34:48.021  9865  9865 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+09-07 03:34:48.040  2182  2197 I ndroid.systemu: NativeAlloc concurrent copying GC freed 24606(1196KB) AllocSpace objects, 0(0B) LOS objects, 49% free, 5630KB/10MB, paused 897us total 113.030ms

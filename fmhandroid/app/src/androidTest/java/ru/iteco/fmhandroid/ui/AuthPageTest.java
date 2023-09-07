@@ -40,7 +40,8 @@ public class AuthPageTest extends BaseTest {
                 UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
         try {
             authSteps.isAuthScreen();
-        } catch (PerformException e) {
+        } catch (PerformException e)
+        {
             mainPageSteps.clickLogOutBut();
         }
     }

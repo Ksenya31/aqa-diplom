@@ -1,0 +1,53 @@
+{
+    "name": "Переход на страницу Claims при нажатии на all claims",
+    "start": 1694060895082,
+    "stop": 1694060911952,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "16bb1032-2bf8-4921-9fd5-c0d43112cfd9",
+    "historyId": "965b3dc4bae0d95ba7cb54747b84a5e2",
+    "fullName": "ru.iteco.fmhandroid.ui.MainPageTest.shouldOpenClaimsPageByButAllClaims",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.MainPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldOpenClaimsPageByButAllClaims"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.MainPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(1089)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

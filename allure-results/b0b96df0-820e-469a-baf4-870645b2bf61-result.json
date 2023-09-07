@@ -1,0 +1,53 @@
+{
+    "name": "Фильтрация новостей по Категории Праздник",
+    "start": 1694060098821,
+    "stop": 1694060114261,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "b0b96df0-820e-469a-baf4-870645b2bf61",
+    "historyId": "1fc11462ce662a48b2bd0693d693005c",
+    "fullName": "ru.iteco.fmhandroid.ui.FilterNewsPageTest.shouldFilterTheNewsWithCategoryHoliday",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.FilterNewsPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldFilterTheNewsWithCategoryHoliday"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.FilterNewsPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(964)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

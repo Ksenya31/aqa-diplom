@@ -1,0 +1,53 @@
+{
+    "name": "Отмена поиска CANCEL в разделе Filter news",
+    "start": 1694060133879,
+    "stop": 1694060169150,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "c206ba39-2a3e-40e4-8d72-e10b37f2dd44",
+    "historyId": "18c54072d4a3de727321b61f1137449a",
+    "fullName": "ru.iteco.fmhandroid.ui.FilterNewsPageTest.shouldNotFilterNewsByCategoryAnnouncement",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.FilterNewsPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldNotFilterNewsByCategoryAnnouncement"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.FilterNewsPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(964)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

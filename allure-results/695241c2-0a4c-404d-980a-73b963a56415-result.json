@@ -1,0 +1,53 @@
+{
+    "name": "Оставить поля ввода логина и пароля пустыми",
+    "start": 1694062317441,
+    "stop": 1694062329509,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "695241c2-0a4c-404d-980a-73b963a56415",
+    "historyId": "7b31d12139b8447ef19d576134df075f",
+    "fullName": "ru.iteco.fmhandroid.ui.AuthPageTest.shouldNotLogInWithEmptyFields",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.AuthPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldNotLogInWithEmptyFields"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.AuthPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(1215)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

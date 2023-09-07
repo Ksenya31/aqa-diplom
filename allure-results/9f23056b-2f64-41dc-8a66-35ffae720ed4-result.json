@@ -1,0 +1,53 @@
+{
+    "name": "Фильтрация новостей выбор даты только в левом календаре",
+    "start": 1694060050706,
+    "stop": 1694060058277,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "9f23056b-2f64-41dc-8a66-35ffae720ed4",
+    "historyId": "6cabf0794a4c1616858ec4bbd6f3888",
+    "fullName": "ru.iteco.fmhandroid.ui.FilterNewsPageTest.shouldShowMessageWrongPeriodPublishDateEndField",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.FilterNewsPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldShowMessageWrongPeriodPublishDateEndField"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.FilterNewsPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(964)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

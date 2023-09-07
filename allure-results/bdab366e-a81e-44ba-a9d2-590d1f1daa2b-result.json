@@ -1,0 +1,53 @@
+{
+    "name": "Редактирование новости, поле Description",
+    "start": 1694057960562,
+    "stop": 1694057971935,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "bdab366e-a81e-44ba-a9d2-590d1f1daa2b",
+    "historyId": "9d6e2a88933a1189fe09c2de9f03fed0",
+    "fullName": "ru.iteco.fmhandroid.ui.ControlPanelTest.shouldChangeTheDescription",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.ControlPanelTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldChangeTheDescription"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.ControlPanelTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(729)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

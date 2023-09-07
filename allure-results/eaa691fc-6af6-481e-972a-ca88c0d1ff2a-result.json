@@ -1,0 +1,53 @@
+{
+    "name": "Ввод валидного пароля и логина на латинице",
+    "start": 1694064375578,
+    "stop": 1694064382447,
+    "stage": "finished",
+    "description": null,
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "eaa691fc-6af6-481e-972a-ca88c0d1ff2a",
+    "historyId": "1e2c954dd05e9ba21120f37b7d02fa67",
+    "fullName": "ru.iteco.fmhandroid.ui.AuthPageTest.shouldLogInWithValidData",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.AuthPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "shouldLogInWithValidData"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.AuthPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(1225)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}
