@@ -46,4 +46,4 @@
 * ОС - Windows 10 Pro x64
 * версия Android Studio Android Studio Flamingo | 2022.2.1 Patch 2
 
-## [Документация](https://github.com/Ksenya31/aqa-diplom/Report.git)
+
