@@ -44,7 +44,6 @@ import ru.iteco.fmhandroid.ui.data.CustomRecyclerViewActions;
 import ru.iteco.fmhandroid.ui.data.DataHelper;
 import ru.iteco.fmhandroid.ui.data.TestUtils;
 
-
 public class ControlPanelSteps {
 
     NewsPageSteps newsPageSteps = new NewsPageSteps();
@@ -54,6 +53,7 @@ public class ControlPanelSteps {
     //Форма создания новости
     public Matcher<View> newsItemCategoryField = withId(R.id.news_item_category_text_auto_complete_text_view);
     public Matcher<View> newsItemTitleField = withId(R.id.news_item_title_text_input_edit_text);
+    public Matcher<View> newsItemMaterialCardView = withId(R.id.news_item_material_card_view);
     public Matcher<View> newsItemPublishDateField = withId(R.id.news_item_publish_date_text_input_edit_text);
     public Matcher<View> newsItemPublishTimeField = withId(R.id.news_item_publish_time_text_input_edit_text);
     public Matcher<View> newsItemDescriptionField = withId(R.id.news_item_description_text_input_edit_text);
@@ -91,8 +91,17 @@ public class ControlPanelSteps {
     public Matcher<View> createTimeInputEndIcon = allOf(withId(R.id.text_input_end_icon), withParent(withParent(withParent(withParent(withId(R.id.news_item_publish_time_text_input_layout))))));
     public Matcher<View> descriptionTextInputEndIcon = allOf(withId(R.id.text_input_end_icon), withParent(withParent(withParent(withParent(withId(R.id.news_item_description_text_input_layout))))));
     public Matcher<View> messageChangesWonTBeSaved = withText("The changes won't be saved, do you really want to log out?");
+    public Matcher<View> editNewsMaterialButton = allOf(withId(R.id.edit_news_material_button),withParent(withParent(withParent(withParent(withId(R.id.container_list_news_include))))));
 
     public int newsItemTitleTextView = (R.id.news_item_title_text_view);
+
+    @Step("Открыть новость")
+    public void openNewsCard(DataHelper.CreateNews news) {
+        checkNewsIsPresent(news);
+        getItemNewsEditElement(news.getNewsName()).perform(click());
+    }
+
+
 
     @Step("Всплывающее уведомление о неправильной категории ")
     public ViewInteraction wrongСategoryToast(String text) {
@@ -123,11 +132,20 @@ public class ControlPanelSteps {
         TestUtils.waitView(cancelBut).check(matches(isDisplayed()));
         TestUtils.waitView(switcherActive).check(matches(isDisplayed()));
     }
+
+    @Step("Проверка карточки новостей")
+    public void isCreatingTestNews() {
+        TestUtils.waitView(withText("Creating News")).check(matches(isDisplayed()));
+        TestUtils.waitView(switcherActive).check(matches(isDisplayed()));
+    }
+
+
     @Step("Выбрать категорию новостей из списка ")
     public void selectANewsCategoryFromTheList(String nameCategory) {
         TestUtils.waitView(newsItemCategoryField).perform(click());
+        onView(withText(nameCategory)).inRoot(RootMatchers.isPlatformPopup()).check(matches(isDisplayed())).perform(click());
         Espresso.closeSoftKeyboard();
-        onView(withText(nameCategory)).inRoot((RootMatchers.isPlatformPopup())).check(matches(isDisplayed())).perform(click());
+
     }
     @Step("Установить дату в виджете выбора даты ")
     public void setDateToDatePicker(LocalDateTime date) {
@@ -152,6 +170,11 @@ public class ControlPanelSteps {
     public void openNewsTimePicker() {
         TestUtils.waitView(newsItemPublishTimeField).perform(click());
     }
+    @Step("    ")
+    public void openNews() {
+        TestUtils.waitView(newsItemMaterialCardView).perform(click());
+    }
+
     @Step("Установить время ")
     public void setTimeToTimeField(LocalDateTime date) {
         TestUtils.waitView(newsItemPublishTimeField).perform(click());
@@ -184,12 +207,19 @@ public class ControlPanelSteps {
     }
     @Step("Элемент для просмотра новости ")
     public ViewInteraction getItemNewsButViewElement(String title) {
-        return onView(allOf(withId(R.id.view_news_item_image_view), withParent(withParent(allOf(withId(R.id.news_item_material_card_view), withChild(withChild(withText(title))))))));
+        return onView(allOf(withId(R.id.news_item_material_card_view)));
     }
     @Step("Элемент описания новости ")
     public ViewInteraction getItemNewsDescriptionElement(String title) {
-        return onView(allOf(withId(R.id.news_item_description_text_view), withParent(withParent(allOf(withId(R.id.news_item_material_card_view), withChild(withChild(withText(title))))))));
+        return onView(allOf(withId(R.id.news_item_description_text_view),
+                withParent(withParent(allOf(withId(R.id.news_item_material_card_view),
+                        withChild(withChild(withText(title))))))));
     }
+    @Step("Открыть форму редактирования новости ")
+    public void openEditNewsForm() {
+        TestUtils.waitView(editNewsMaterialButton).perform(click());
+    }
+
     @Step("Удалить элемент новости")
     public void deleteItemNews(String title) {
         scrollToElementInRecyclerList(title);
@@ -198,12 +228,43 @@ public class ControlPanelSteps {
         TestUtils.waitView(okBut).perform(click());
     }
     @Step("Прокрутить к элементу в списке  ")
-    public ViewInteraction scrollToElementInRecyclerList(String description) {
+       public ViewInteraction scrollToElementInRecyclerList(String description) {
         return TestUtils.waitView(newsRecyclerList)
-                // scrollTo will fail the test if no item matches.
                 .perform(RecyclerViewActions.scrollTo(allOf(
                         hasDescendant(withText(description)))));
     }
+    @Step ("Проверкa видимости элемента после выполнения прокрутки")
+    public ViewInteraction checkElementVisibility(String description) {
+        return onView(allOf(
+                hasDescendant(withText(description)),
+                isDisplayed()
+        ));
+    }
+    @Step ("Не видим элемент после выполнения прокрутки")
+    public ViewInteraction checkElementNotVisible(String description) {
+        return onView(allOf(
+                hasDescendant(withText(description)),
+                not(isDisplayed())
+        ));
+    }
+
+    @Step("Проверить наличие новости ")
+    public void checkNewsIsPresent(DataHelper.CreateNews news) {
+        scrollToElementInRecyclerList(news.getNewsName()).check(matches(isDisplayed()));
+    }
+    @Step("Проверить отсутствие новости ")
+    public void checkNewsDoesNotPresent(DataHelper.CreateNews news) {
+        getNewsRecyclerList()
+                .check(matches(CustomRecyclerViewActions.RecyclerViewMatcher
+                        .matchChildViewIsNotExist(newsItemTitleTextView, withText(news.getNewsName()))));
+    }
+
+    @Step("Открыть описание новости ")
+    public void openNewsDescription(DataHelper.CreateNews news) {
+        getItemNewsButViewElement(news.getNewsName()).perform(click());
+    }
+
+
     @Step("Проверить всплывающее уведомление ")
     public void checkToast(String text, boolean visible) {
         if (visible) {
@@ -304,23 +365,5 @@ public class ControlPanelSteps {
             creatingNews(news);
         }
     }
-    @Step("Проверить наличие новости ")
-    public void checkNewsIsPresent(DataHelper.CreateNews news) {
-        scrollToElementInRecyclerList(news.getNewsName()).check(matches(isDisplayed()));
-    }
-    @Step("Проверить отсутствие новости ")
-    public void checkNewsDoesNotPresent(DataHelper.CreateNews news) {
-        getNewsRecyclerList()
-                .check(matches(CustomRecyclerViewActions.RecyclerViewMatcher
-                        .matchChildViewIsNotExist(newsItemTitleTextView, withText(news.getNewsName()))));
-    }
-    @Step("Открыть описание новости ")
-    public void openNewsDescription(DataHelper.CreateNews news) {
-        getItemNewsButViewElement(news.getNewsName()).perform(click());
-    }
-    @Step("Открыть новость")
-    public void openNewsCard(DataHelper.CreateNews news) {
-        checkNewsIsPresent(news);
-        getItemNewsEditElement(news.getNewsName()).perform(click());
-    }
+
 }

@@ -3,11 +3,15 @@
 Дипломная работа представляет собой автоматизацию тестирования мобильного приложения “Мобильный хоспис”.
 
 ### Prerequisites
-
 Для работы с проектом необходимо установить:
 
 * Android Studio 
-* Allure
+* Allure // проверить командой: allure --version.
+Если не установленн, то:
+- Скачайте последнюю версию инструмента в расширении .zip из Maven Central.
+- Извлеките содержимое архива в папку, в которую хотите установить Allure.
+- Добавьте папку bin из содержимого, извлеченного на предыдущем шаге, в PATH. Путь к нужной нам папке выглядит примерно так (именно его и нужно добавить в PATH):
+- Проверьте, что Allure успешно установлен, командой: allure --version
 
 
 ## Начало работы
@@ -31,7 +35,7 @@
   1. Открыть папку с тестами fmhandroid/app/src/androidTest/java/ru/iteco/fmhandroid/ui/.   
   1. Запускать тесты кнопкой Run.
   1. После запуска тестов подключиться через adb - 'adb shell'.
-  1. Скопировать результаты из каталога с приложением в другое место - 'run-as ru.iteco.fmhandroid sh -c 'cd /data/data/ru.iteco.fmhandroid/files && tar cf - allure-results' | tar xvf - -C /data/local/tmp'.
+  1. Скопировать результаты из каталога с приложением в другое место - "  run-as ru.iteco.fmhandroid sh -c 'cd /data/data/ru.iteco.fmhandroid/files && tar cf - allure-results' | tar xvf - -C /data/local/tmp "
   1. Отключился от adb - 'exit'.
   1. Скачать результаты - 'adb pull /data/local/tmp/allure-results'.
   1. Для просмотра Allure отчета запустить 'allure serve'.
@@ -40,7 +44,6 @@
 ## Лицензия
 
 * ОС - Windows 10 Pro x64
-* версия Java: 4
-
+* версия Android Studio Android Studio Flamingo | 2022.2.1 Patch 2
 
 ## [Документация](https://github.com/Ksenya31/aqa-diplom/Report.git)

@@ -40,12 +40,12 @@ public class MainPageTest extends BaseTest {
         device =
                 UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
         //device.setOrientationNatural();
-        try {
+        /*try {
             authSteps.isAuthScreen();
         } catch (PerformException e) {
             mainPageSteps.clickLogOutBut();
         }
-       authSteps.authWithValidData(authInfo());
+       authSteps.authWithValidData(authInfo());*/
         mainPageSteps.isMainPage();
     }
 
@@ -88,14 +88,23 @@ public class MainPageTest extends BaseTest {
 
     //Раздел Main
     @Test
-    @DisplayName("Разворачивание новостной ленты с блоками News")
-    public void shouldOpenNewsItemDescription() {
+    @DisplayName("Разворачивание новостного блока News")
+    public void shouldOpenNews() {
         int positionNews = 1;
         newsPageSteps.openNewsOnNewsPage(positionNews);
         newsPageSteps.getNewsItemDescription(positionNews).check(matches(isDisplayed()));
     }
 
+
     @Test
+    @DisplayName("Разворачивание новостной ленты с блоками News")
+    public void shouldOpenNewsItemDescription() {
+        mainPageSteps.newsExpandMaterialButtonClick();
+        mainPageSteps.newsExpandMaterialButtonClick();
+        mainPageSteps.isMainPage();
+    }
+
+   @Test
     @DisplayName("Сворачивание новостной ленты с блоками News")
     public void shouldCollapseTheListOfNews() {
         mainPageSteps.newsExpandMaterialButtonClick();
