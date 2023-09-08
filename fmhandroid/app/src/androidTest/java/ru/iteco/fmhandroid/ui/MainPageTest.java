@@ -40,12 +40,12 @@ public class MainPageTest extends BaseTest {
         device =
                 UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
         //device.setOrientationNatural();
-        /*try {
+        try {
             authSteps.isAuthScreen();
         } catch (PerformException e) {
             mainPageSteps.clickLogOutBut();
         }
-       authSteps.authWithValidData(authInfo());*/
+       authSteps.authWithValidData(authInfo());
         mainPageSteps.isMainPage();
     }
 
@@ -142,7 +142,7 @@ public class MainPageTest extends BaseTest {
     @Test
     @DisplayName("Переход в Claims (блок с претензиями)")
     public void shouldOpenClaimsItemDescription() {
-        int claimPosition = 4;
+        int claimPosition = 0;
         mainPageSteps.openClaimItemDescription(claimPosition);
         claimsPageSteps.getClaimItemDescription().check(matches(isDisplayed()));
     }
