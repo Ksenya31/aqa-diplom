@@ -33,12 +33,12 @@ public class OurMissionPageTest extends BaseTest {
                 UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
         device.setOrientationNatural();
 
-        try {
+       /* try {
             authSteps.isAuthScreen();
         } catch (PerformException e) {
             mainPageSteps.clickLogOutBut();
         }
-        authSteps.authWithValidData(authInfo());
+        authSteps.authWithValidData(authInfo());*/
         mainPageSteps.isMainPage();
         mainPageSteps.openOurMissionPage();
         ourMissionPageSteps.isOurMissionPage();

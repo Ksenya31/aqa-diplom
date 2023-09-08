@@ -46,12 +46,12 @@ public class FilterNewsPageTest extends BaseTest {
         device =
                 UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
         //device.setOrientationNatural();
-        try {
+        /*try {
             authSteps.isAuthScreen();
         } catch (PerformException e) {
             mainPageSteps.clickLogOutBut();
         }
-        authSteps.authWithValidData(authInfo());
+        authSteps.authWithValidData(authInfo());*/
         mainPageSteps.isMainPage();
         mainPageSteps.openNewsPageThroughTheMainMenu();
     }
@@ -61,21 +61,36 @@ public class FilterNewsPageTest extends BaseTest {
     public void shouldFilterTheNewsWithCategoryAnnouncement() {
         DataHelper.CreateNews firstAnnouncementNews = DataHelper.newsWithRandomNameAndDescription()
                 .withCategory(DataHelper.getCategoryAnnouncement()).withDueDate(today).build();
+        DataHelper.CreateNews secondAnnouncementNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryAnnouncement()).withDueDate(today).build();
+        DataHelper.CreateNews thirdAnnouncementNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryAnnouncement()).withDueDate(today).build();
+        DataHelper.CreateNews forthBirthdayNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryBirthday()).withDueDate(today).build();
+        DataHelper.CreateNews fifthBirthdayNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryBirthday()).withDueDate(today).build();
+        DataHelper.CreateNews sixthBirthdayNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryBirthday()).withDueDate(today).build();
 
         String categoryAnnouncement = "Объявление";
         String publishDateStartExpected = TestUtils.getDateToString(today);
         String publishDateEndExpected = TestUtils.getDateToString(today.plus(1, ChronoUnit.DAYS));
-        controlPanelSteps.createNews(firstAnnouncementNews);
-        controlPanelSteps.isControlPanel();
+
+        newsPageSteps.openControlPanel();//Создание новостей
+        controlPanelSteps.createNews(firstAnnouncementNews, secondAnnouncementNews, thirdAnnouncementNews,
+                forthBirthdayNews, fifthBirthdayNews, sixthBirthdayNews);
+        controlPanelSteps.isControlPanel(); //Переходим в раздел Новости
         mainPageSteps.openNewsPageThroughTheMainMenu();
         newsPageSteps.isNewsPage();
-        newsPageSteps.openFilterNews();
+        newsPageSteps.openFilterNews();//Открываем форму фильтра и заполняем её
         filterNewsPageSteps.isFilterNewsForm();
         filterNewsPageSteps.fillingOutTheFilterNewsForm(categoryAnnouncement, today, today.plus(1, ChronoUnit.DAYS));
+        //Проверяем, что в полях формы отображаются введенные данные
         filterNewsPageSteps.getNewsFilterCategoryField().check(matches(withText(categoryAnnouncement)));
         filterNewsPageSteps.getNewsFilterPublishDateStartField().check(matches(withText(publishDateStartExpected)));
         filterNewsPageSteps.getNewsFilterPublishDateEndField().check(matches(withText(publishDateEndExpected)));
-        filterNewsPageSteps.filterNewsButtonClick();
+        filterNewsPageSteps.filterNewsButtonClick();  //Включаем фильтрацию
+        //Проверка
         newsPageSteps.isNewsPage();
         controlPanelSteps.checkNewsIsPresent(firstAnnouncementNews);
 
@@ -84,12 +99,24 @@ public class FilterNewsPageTest extends BaseTest {
     @Test
     @DisplayName("Фильтрация новостей по Категории День рождения")
     public void shouldFilterTheNewsWithCategoryBirthday() {
+        DataHelper.CreateNews firstAnnouncementNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryAnnouncement()).withDueDate(today).build();
+        DataHelper.CreateNews secondAnnouncementNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryAnnouncement()).withDueDate(today).build();
+        DataHelper.CreateNews thirdAnnouncementNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryAnnouncement()).withDueDate(today).build();
         DataHelper.CreateNews forthBirthdayNews = DataHelper.newsWithRandomNameAndDescription()
                 .withCategory(DataHelper.getCategoryBirthday()).withDueDate(today).build();
+        DataHelper.CreateNews fifthBirthdayNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryBirthday()).withDueDate(today).build();
+        DataHelper.CreateNews sixthBirthdayNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryBirthday()).withDueDate(today).build();
+
         String categoryBirthday = "День рождения";
         String publishDateStartExpected = TestUtils.getDateToString(today);
         String publishDateEndExpected = TestUtils.getDateToString(today.plus(1, ChronoUnit.DAYS));
-        controlPanelSteps.createNews(forthBirthdayNews);
+        controlPanelSteps.createNews(firstAnnouncementNews, secondAnnouncementNews, thirdAnnouncementNews,
+                forthBirthdayNews, fifthBirthdayNews, sixthBirthdayNews);
         controlPanelSteps.isControlPanel();
         mainPageSteps.openNewsPageThroughTheMainMenu();
         newsPageSteps.isNewsPage();
@@ -101,6 +128,7 @@ public class FilterNewsPageTest extends BaseTest {
         filterNewsPageSteps.getNewsFilterPublishDateStartField().check(matches(withText(publishDateStartExpected)));
         filterNewsPageSteps.getNewsFilterPublishDateEndField().check(matches(withText(publishDateEndExpected)));
         filterNewsPageSteps.filterNewsButtonClick();
+        //Проверка
         newsPageSteps.isNewsPage();
         controlPanelSteps.checkNewsIsPresent(forthBirthdayNews);
     }
@@ -110,10 +138,23 @@ public class FilterNewsPageTest extends BaseTest {
     public void shouldFilterTheNewsWithCategorySalary() {
         DataHelper.CreateNews firstSalaryNews = DataHelper.newsWithRandomNameAndDescription()
                 .withCategory(DataHelper.getCategorySalary()).withDueDate(today).build();
+        DataHelper.CreateNews secondSalaryNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategorySalary()).withDueDate(today).build();
+        DataHelper.CreateNews thirdSalaryNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategorySalary()).withDueDate(today).build();
+        DataHelper.CreateNews forthTradeUnionNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryTradeUnion()).withDueDate(today).build();
+        DataHelper.CreateNews fifthTradeUnionNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryTradeUnion()).withDueDate(today).build();
+        DataHelper.CreateNews sixthTradeUnionNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryTradeUnion()).withDueDate(today).build();
+
         String categorySalary = "Зарплата";
         String publishDateStartExpected = TestUtils.getDateToString(today);
         String publishDateEndExpected = TestUtils.getDateToString(today.plus(1, ChronoUnit.DAYS));
-        controlPanelSteps.createNews(firstSalaryNews);
+        controlPanelSteps.createNews(firstSalaryNews, secondSalaryNews, thirdSalaryNews,
+                forthTradeUnionNews, fifthTradeUnionNews, sixthTradeUnionNews);
+
         controlPanelSteps.isControlPanel();
         mainPageSteps.openNewsPageThroughTheMainMenu();
         newsPageSteps.isNewsPage();
@@ -125,6 +166,7 @@ public class FilterNewsPageTest extends BaseTest {
         filterNewsPageSteps.getNewsFilterPublishDateStartField().check(matches(withText(publishDateStartExpected)));
         filterNewsPageSteps.getNewsFilterPublishDateEndField().check(matches(withText(publishDateEndExpected)));
         filterNewsPageSteps.filterNewsButtonClick();
+        //Проверка
         newsPageSteps.isNewsPage();
         controlPanelSteps.checkNewsIsPresent(firstSalaryNews);
     }
@@ -132,12 +174,25 @@ public class FilterNewsPageTest extends BaseTest {
     @Test
     @DisplayName("Фильтрация новостей по Категории Профсоюз")
     public void shouldFilterTheNewsWithCategoryTradeUnion() {
+        DataHelper.CreateNews firstSalaryNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategorySalary()).withDueDate(today).build();
+        DataHelper.CreateNews secondSalaryNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategorySalary()).withDueDate(today).build();
+        DataHelper.CreateNews thirdSalaryNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategorySalary()).withDueDate(today).build();
         DataHelper.CreateNews forthTradeUnionNews = DataHelper.newsWithRandomNameAndDescription()
                 .withCategory(DataHelper.getCategoryTradeUnion()).withDueDate(today).build();
+        DataHelper.CreateNews fifthTradeUnionNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryTradeUnion()).withDueDate(today).build();
+        DataHelper.CreateNews sixthTradeUnionNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryTradeUnion()).withDueDate(today).build();
+
         String categoryTradeUnion = "Профсоюз";
         String publishDateStartExpected = TestUtils.getDateToString(today);
         String publishDateEndExpected = TestUtils.getDateToString(today.plus(1, ChronoUnit.DAYS));
-        controlPanelSteps.createNews(forthTradeUnionNews);
+        controlPanelSteps.createNews(firstSalaryNews, secondSalaryNews, thirdSalaryNews,
+                forthTradeUnionNews, fifthTradeUnionNews, sixthTradeUnionNews);
+
         controlPanelSteps.isControlPanel();
         mainPageSteps.openNewsPageThroughTheMainMenu();
         newsPageSteps.isNewsPage();
@@ -148,7 +203,9 @@ public class FilterNewsPageTest extends BaseTest {
         filterNewsPageSteps.getNewsFilterCategoryField().check(matches(withText(categoryTradeUnion)));
         filterNewsPageSteps.getNewsFilterPublishDateStartField().check(matches(withText(publishDateStartExpected)));
         filterNewsPageSteps.getNewsFilterPublishDateEndField().check(matches(withText(publishDateEndExpected)));
+        //Включаем фильтрацию
         filterNewsPageSteps.filterNewsButtonClick();
+        //Проверка
         newsPageSteps.isNewsPage();
         controlPanelSteps.checkNewsIsPresent(forthTradeUnionNews);
 
@@ -159,10 +216,23 @@ public class FilterNewsPageTest extends BaseTest {
     public void shouldFilterTheNewsWithCategoryHoliday() {
         DataHelper.CreateNews firstHolidayNews = DataHelper.newsWithRandomNameAndDescription()
                 .withCategory(DataHelper.getCategoryHoliday()).withDueDate(today).build();
+        DataHelper.CreateNews secondHolidayNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryHoliday()).withDueDate(today).build();
+        DataHelper.CreateNews thirdHolidayNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryHoliday()).withDueDate(today).build();
+        DataHelper.CreateNews forthTradeUnionNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryTradeUnion()).withDueDate(today).build();
+        DataHelper.CreateNews fifthTradeUnionNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryTradeUnion()).withDueDate(today).build();
+        DataHelper.CreateNews sixthTradeUnionNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryTradeUnion()).withDueDate(today).build();
+
         String categoryHoliday = "Праздник";
         String publishDateStartExpected = TestUtils.getDateToString(today);
         String publishDateEndExpected = TestUtils.getDateToString(today.plus(1, ChronoUnit.DAYS));
-        controlPanelSteps.createNews(firstHolidayNews);
+        controlPanelSteps.createNews(firstHolidayNews, secondHolidayNews, thirdHolidayNews,
+                forthTradeUnionNews,fifthTradeUnionNews,sixthTradeUnionNews
+                /*forthMassageNews, fifthMassageNews, sixthMassageNews*/);
         controlPanelSteps.isControlPanel();
         mainPageSteps.openNewsPageThroughTheMainMenu();
         newsPageSteps.isNewsPage();
@@ -174,89 +244,11 @@ public class FilterNewsPageTest extends BaseTest {
         filterNewsPageSteps.getNewsFilterPublishDateStartField().check(matches(withText(publishDateStartExpected)));
         filterNewsPageSteps.getNewsFilterPublishDateEndField().check(matches(withText(publishDateEndExpected)));
         filterNewsPageSteps.filterNewsButtonClick();
+        //Проверка
         newsPageSteps.isNewsPage();
         controlPanelSteps.checkNewsIsPresent(firstHolidayNews);
 
     }
-
-
-    @Test
-    @DisplayName("Фильтрация новостей по Категории Массаж")
-    public void shouldFilterTheNewsWithCategoryMassage() {
-        DataHelper.CreateNews forthMassageNews = DataHelper.newsWithRandomNameAndDescription()
-                .withCategory(DataHelper.getCategoryMassage()).withDueDate(today).build();
-        String categoryMassage = "Массаж";
-        String publishDateStartExpected = TestUtils.getDateToString(today);
-        String publishDateEndExpected = TestUtils.getDateToString(today.plus(1, ChronoUnit.DAYS));
-        controlPanelSteps.createNews(forthMassageNews);
-        controlPanelSteps.isControlPanel();
-        mainPageSteps.openNewsPageThroughTheMainMenu();
-        newsPageSteps.isNewsPage();
-        newsPageSteps.openFilterNews();
-        filterNewsPageSteps.isFilterNewsForm();
-        filterNewsPageSteps.fillingOutTheFilterNewsForm(categoryMassage,
-                today, today.plus(1, ChronoUnit.DAYS));
-        filterNewsPageSteps.getNewsFilterCategoryField().check(matches(withText(categoryMassage)));
-        filterNewsPageSteps.getNewsFilterPublishDateStartField().check(matches(withText(publishDateStartExpected)));
-        filterNewsPageSteps.getNewsFilterPublishDateEndField().check(matches(withText(publishDateEndExpected)));
-        filterNewsPageSteps.filterNewsButtonClick();
-        newsPageSteps.isNewsPage();
-        controlPanelSteps.checkNewsIsPresent(forthMassageNews);
-
-    }
-
-
-    @Test
-    @DisplayName("Фильтрация новостей по Категории Благодарность")
-    public void shouldFilterTheNewsWithCategoryGratitude() {
-        DataHelper.CreateNews firstGratitudeNews = DataHelper.newsWithRandomNameAndDescription()
-                .withCategory(DataHelper.getCategoryGratitude()).withDueDate(today).build();
-        String categoryGratitude = "Благодарность";
-        String publishDateStartExpected = TestUtils.getDateToString(today);
-        String publishDateEndExpected = TestUtils.getDateToString(today.plus(1, ChronoUnit.DAYS));
-        controlPanelSteps.createNews(firstGratitudeNews);
-        controlPanelSteps.isControlPanel();
-        mainPageSteps.openNewsPageThroughTheMainMenu();
-        newsPageSteps.isNewsPage();
-        newsPageSteps.openFilterNews();
-        filterNewsPageSteps.isFilterNewsForm();
-        filterNewsPageSteps.fillingOutTheFilterNewsForm(categoryGratitude,
-                today, today.plus(1, ChronoUnit.DAYS));
-        filterNewsPageSteps.getNewsFilterCategoryField().check(matches(withText(categoryGratitude)));
-        filterNewsPageSteps.getNewsFilterPublishDateStartField().check(matches(withText(publishDateStartExpected)));
-        filterNewsPageSteps.getNewsFilterPublishDateEndField().check(matches(withText(publishDateEndExpected)));
-        filterNewsPageSteps.filterNewsButtonClick();
-        newsPageSteps.isNewsPage();
-        controlPanelSteps.checkNewsIsPresent(firstGratitudeNews);
-
-    }
-
-
-    @Test
-    @DisplayName("Фильтрация новостей по Категории Нужна помощь")
-    public void shouldFilterTheNewsWithCategoryNeedHelp() {
-        DataHelper.CreateNews forthNeedHelpNews = DataHelper.newsWithRandomNameAndDescription()
-                .withCategory(DataHelper.getCategoryNeedHelp()).withDueDate(today).build();
-        String categoryNeedHelp = "Нужна помощь";
-        String publishDateStartExpected = TestUtils.getDateToString(today);
-        String publishDateEndExpected = TestUtils.getDateToString(today.plus(1, ChronoUnit.DAYS));
-        controlPanelSteps.createNews(forthNeedHelpNews);
-        controlPanelSteps.isControlPanel();
-        mainPageSteps.openNewsPageThroughTheMainMenu();
-        newsPageSteps.isNewsPage();
-        newsPageSteps.openFilterNews();
-        filterNewsPageSteps.isFilterNewsForm();
-        filterNewsPageSteps.fillingOutTheFilterNewsForm(categoryNeedHelp,
-                today, today.plus(1, ChronoUnit.DAYS));
-        filterNewsPageSteps.getNewsFilterCategoryField().check(matches(withText(categoryNeedHelp)));
-        filterNewsPageSteps.getNewsFilterPublishDateStartField().check(matches(withText(publishDateStartExpected)));
-        filterNewsPageSteps.getNewsFilterPublishDateEndField().check(matches(withText(publishDateEndExpected)));
-        filterNewsPageSteps.filterNewsButtonClick();
-        newsPageSteps.isNewsPage();
-        controlPanelSteps.checkNewsIsPresent(forthNeedHelpNews);
-
-    }
-
 
     @Test
     @DisplayName("Отмена поиска CANCEL в разделе Filter news")
@@ -267,17 +259,10 @@ public class FilterNewsPageTest extends BaseTest {
                 .withCategory(DataHelper.getCategoryBirthday()).withDueDate(today).build();
         DataHelper.CreateNews thirdHolidayNews = DataHelper.newsWithRandomNameAndDescription()
                 .withCategory(DataHelper.getCategoryHoliday()).withDueDate(today).build();
-        DataHelper.CreateNews forthMassageNews = DataHelper.newsWithRandomNameAndDescription()
-                .withCategory(DataHelper.getCategoryMassage()).withDueDate(today).build();
-        DataHelper.CreateNews fifthGratitudeNews = DataHelper.newsWithRandomNameAndDescription()
-                .withCategory(DataHelper.getCategoryGratitude()).withDueDate(today).build();
-        DataHelper.CreateNews sixthTradeUnionNews = DataHelper.newsWithRandomNameAndDescription()
-                .withCategory(DataHelper.getCategoryTradeUnion()).withDueDate(today).build();
-        String categoryAnnouncement = "Объявление";
+                String categoryAnnouncement = "Объявление";
         String publishDateStartExpected = TestUtils.getDateToString(today);
         String publishDateEndExpected = TestUtils.getDateToString(today.plus(1, ChronoUnit.DAYS));
-        controlPanelSteps.createNews(firstAnnouncementNews, secondBirthdayNews, thirdHolidayNews,
-                forthMassageNews, fifthGratitudeNews, sixthTradeUnionNews);
+        controlPanelSteps.createNews(firstAnnouncementNews, secondBirthdayNews, thirdHolidayNews);
         controlPanelSteps.isControlPanel();
         mainPageSteps.openNewsPageThroughTheMainMenu();
         newsPageSteps.isNewsPage();
@@ -293,11 +278,8 @@ public class FilterNewsPageTest extends BaseTest {
         newsPageSteps.isNewsPage();
         controlPanelSteps.checkNewsIsPresent(firstAnnouncementNews);
         controlPanelSteps.checkNewsIsPresent(secondBirthdayNews);
-        controlPanelSteps.checkNewsIsPresent(thirdHolidayNews);
-        controlPanelSteps.checkNewsIsPresent(forthMassageNews);
-        controlPanelSteps.checkNewsIsPresent(fifthGratitudeNews);
-        controlPanelSteps.checkNewsIsPresent(sixthTradeUnionNews);
-    }
+        controlPanelSteps.checkNewsIsPresent(thirdHolidayNews);}
+
 
 //БАГ, не должен искать не существующюю категорию
     @Test

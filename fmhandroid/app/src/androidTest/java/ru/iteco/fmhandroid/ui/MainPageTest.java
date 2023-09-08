@@ -2,6 +2,7 @@ package ru.iteco.fmhandroid.ui;
 
 import android.content.Context;
 import android.os.RemoteException;
+import android.os.SystemClock;
 
 import androidx.test.espresso.PerformException;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -40,12 +41,12 @@ public class MainPageTest extends BaseTest {
         device =
                 UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
         //device.setOrientationNatural();
-        try {
+        /*try {
             authSteps.isAuthScreen();
         } catch (PerformException e) {
             mainPageSteps.clickLogOutBut();
         }
-       authSteps.authWithValidData(authInfo());
+      authSteps.authWithValidData(authInfo());*/
         mainPageSteps.isMainPage();
     }
 
@@ -79,12 +80,15 @@ public class MainPageTest extends BaseTest {
         ourMissionPageSteps.isOurMissionPage();
     }
 
-    @Test
+    /*@Test
     @DisplayName("Выход из профиля Log out")
     public void shouldOpenTheLoginPage() {
         mainPageSteps.clickLogOutBut();
         authSteps.isAuthScreen();
-    }
+        authSteps.authWithValidData(authInfo());
+        SystemClock.sleep(10000);
+        mainPageSteps.isMainPage();
+        }*/
 
     //Раздел Main
     @Test

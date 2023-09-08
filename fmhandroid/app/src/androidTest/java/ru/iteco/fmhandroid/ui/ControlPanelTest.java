@@ -90,7 +90,7 @@ public class ControlPanelTest extends BaseTest {
     @DisplayName("Переход в Filter news")
     public void shouldOpenTheNewsFilterSettingsForm() {
         newsPageSteps.openFilterNews();
-        //filterNewsPageSteps.isFilterNewsFormControlPanel();
+        filterNewsPageSteps.isFilterNewsFormControlPanel();
     }
 
 
@@ -120,13 +120,14 @@ public class ControlPanelTest extends BaseTest {
         //Проверяем
         controlPanelSteps.checkNewsDoesNotPresent(announcementNews);
     }
-
+//имеет неуникальный идентификатор,
     @Test
     @DisplayName("Разворачивание описание в новостном блоке")
     public void shouldOpenNewsDescription() {
         DataHelper.CreateNews announcementNews = DataHelper.newsWithRandomNameAndDescription()
                 .withCategory(DataHelper.getCategoryAnnouncement()).withDueDate(today).build();
         controlPanelSteps.creatingNews(announcementNews);
+        controlPanelSteps.scrollToElementInRecyclerList(announcementNews.getNewsName()).check(matches(isDisplayed()));
         controlPanelSteps.checkNewsIsPresent(announcementNews);
         controlPanelSteps.openNewsDescription(announcementNews);
         controlPanelSteps.getItemNewsDescriptionElement(announcementNews.getNewsDescription()).check(matches(isDisplayed()));

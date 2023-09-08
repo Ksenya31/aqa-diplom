@@ -119,13 +119,6 @@ public class DataHelper {
         return "Описание" + " " + generateTitleId();
     }
 
-    public static String getExecutorIvanov() {
-        return "Ivanov Ivan Ivanovich";
-    }
-
-    public static String getExecutorSmirnov() {
-        return "Ivanov Ivan Ivanovich";
-    }
 
     public static String getCategoryAnnouncement() {
         return "Объявление";

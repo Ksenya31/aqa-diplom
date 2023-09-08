@@ -1,5 +1,6 @@
 package ru.iteco.fmhandroid.ui;
 
+import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
@@ -50,12 +51,12 @@ public class NewsCreationFormTest extends BaseTest {
         device =
                 UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
 
-        try {
+       /* try {
             authSteps.isAuthScreen();
         } catch (PerformException e) {
             mainPageSteps.clickLogOutBut();
         }
-        authSteps.authWithValidData(authInfo());
+        authSteps.authWithValidData(authInfo());*/
         mainPageSteps.isMainPage();
         mainPageSteps.openNewsPageThroughTheMainMenu();
         newsPageSteps.openControlPanel();
@@ -122,6 +123,21 @@ public class NewsCreationFormTest extends BaseTest {
         //Проверка
         controlPanelSteps.scrollToElementInRecyclerList(tradeUnionNews.getNewsName()).check(matches(isDisplayed()));
     }
+
+    @Test
+    @DisplayName("Создание Новости с категорией Профсоюз")
+    public void shouldCreateANewsItemWithCategory() {
+        DataHelper.CreateNews tradeUnionNews = DataHelper.newsWithRandomNameAndDescription()
+                .withCategory(DataHelper.getCategoryTradeUnion()).withDueDate(today).build();
+        String categoryTradeUnion = "Профсоюз";
+        controlPanelSteps.selectANewsCategoryFromTheList(categoryTradeUnion);
+        controlPanelSteps.fillingOutTheFormCreatingNewsWithDate(tradeUnionNews);
+        controlPanelSteps.saveButtonClick();
+
+        // Проверка, что элемент отображается в списке
+        onView(withText(tradeUnionNews.getNewsName())).check(matches(isDisplayed()));
+    }
+
 
     @Test
     @DisplayName("Создание Новости с категорией Праздник")

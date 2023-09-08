@@ -39,12 +39,12 @@ public class NewsPageTest extends BaseTest {
         device =
                 UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
         //device.setOrientationNatural();
-        try {
+        /*try {
             authSteps.isAuthScreen();
         } catch (PerformException e) {
             mainPageSteps.clickLogOutBut();
         }
-        authSteps.authWithValidData(authInfo());
+        authSteps.authWithValidData(authInfo());*/
         mainPageSteps.isMainPage();
         mainPageSteps.openNewsPageThroughTheMainMenu();
     }
