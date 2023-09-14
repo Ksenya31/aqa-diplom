@@ -1,5 +1,6 @@
 package ru.iteco.fmhandroid.ui.steps;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
 import ru.iteco.fmhandroid.ui.data.TestUtils;
@@ -21,33 +22,39 @@ public class AboutPageSteps {
     public Matcher<View> headerTermsOfUsePage = withText("Terms of use");
     public Matcher<View> headerPrivacyPolicyPage = withText("Privacy policy");
 
-    @Step("Отображение информации о версии приложения")
+
     public void isAboutPage() {
+        Allure.step("Отображение информации о версии приложения");
         TestUtils.waitView(withText("Version:")).check(matches(isDisplayed()));
         TestUtils.waitView(withText("Privacy Policy:")).check(matches(isDisplayed()));
         TestUtils.waitView(withText("Terms of use:")).check(matches(isDisplayed()));
         TestUtils.waitView(withId(R.id.about_company_info_label_text_view)).check(matches(isDisplayed()));
     }
-    @Step("Открыть ссылку Privacy Policy")
+
     public void openPrivacyPolicy() {
+        Allure.step("Открыть ссылку Privacy Policy");
         TestUtils.waitView(withId(R.id.about_privacy_policy_value_text_view)).check(matches(isDisplayed()));
         TestUtils.waitView(withId(R.id.about_privacy_policy_value_text_view)).perform(click());
     }
-    @Step("Открыть ссылку Terms of use")
+
     public void openTermsOfUse() {
+        Allure.step("Открыть ссылку Terms of use");
         TestUtils.waitView(withId(R.id.about_terms_of_use_value_text_view)).check(matches(isDisplayed()));
         TestUtils.waitView(withId(R.id.about_terms_of_use_value_text_view)).perform(click());
     }
-    @Step("Перейти по ссылке Terms of use")
+
     public ViewInteraction getHeaderPrivacyPolicyPage() {
+        Allure.step("Перейти по ссылке Terms of use");
         return TestUtils.waitView(headerPrivacyPolicyPage);
     }
-    @Step("Перейти по ссылке Privacy Policy")
+
     public ViewInteraction getHeaderTermsOfUsePage() {
+        Allure.step("Перейти по ссылке Privacy Policy");
         return TestUtils.waitView(headerTermsOfUsePage);
     }
-    @Step("Вернуться назад")
+
     public void aboutBackImageButClick() {
+        Allure.step("Вернуться назад");
         TestUtils.waitView(aboutBackImageBut).perform(click());
     }
 }

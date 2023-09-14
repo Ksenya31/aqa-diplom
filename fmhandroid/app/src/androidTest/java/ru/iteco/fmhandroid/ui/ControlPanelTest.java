@@ -1,10 +1,12 @@
 package ru.iteco.fmhandroid.ui;
 
+import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.Espresso.pressBack;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.replaceText;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static ru.iteco.fmhandroid.ui.data.DataHelper.authInfo;
 
@@ -13,6 +15,7 @@ import android.os.RemoteException;
 import io.qameta.allure.kotlin.junit4.DisplayName;
 
 import androidx.test.espresso.PerformException;
+import androidx.test.espresso.contrib.RecyclerViewActions;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.uiautomator.UiDevice;
 import androidx.test.uiautomator.UiObjectNotFoundException;
@@ -28,6 +31,7 @@ import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
 import io.qameta.allure.android.runners.AllureAndroidJUnit4;
+import ru.iteco.fmhandroid.R;
 import ru.iteco.fmhandroid.ui.data.DataHelper;
 import ru.iteco.fmhandroid.ui.data.TestUtils;
 import ru.iteco.fmhandroid.ui.steps.AuthSteps;
@@ -54,12 +58,12 @@ public class ControlPanelTest extends BaseTest {
     public void logoutCheckAndOpenControlPanelPage() throws RemoteException, UiObjectNotFoundException {
         device =
                 UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
-        /*try {
+        try {
             authSteps.isAuthScreen();
         } catch (PerformException e) {
             mainPageSteps.clickLogOutBut();
         }
-        authSteps.authWithValidData(authInfo());*/
+        authSteps.authWithValidData(authInfo());
         mainPageSteps.isMainPage();
         mainPageSteps.openNewsPageThroughTheMainMenu();
         newsPageSteps.openControlPanel();
@@ -120,7 +124,7 @@ public class ControlPanelTest extends BaseTest {
         //Проверяем
         controlPanelSteps.checkNewsDoesNotPresent(announcementNews);
     }
-//имеет неуникальный идентификатор,
+//имеет неуникальный идентификатор, падает
     @Test
     @DisplayName("Разворачивание описание в новостном блоке")
     public void shouldOpenNewsDescription() {
@@ -132,6 +136,7 @@ public class ControlPanelTest extends BaseTest {
         controlPanelSteps.openNewsDescription(announcementNews);
         controlPanelSteps.getItemNewsDescriptionElement(announcementNews.getNewsDescription()).check(matches(isDisplayed()));
     }
+
 
 
 //Раздел "Editing News"

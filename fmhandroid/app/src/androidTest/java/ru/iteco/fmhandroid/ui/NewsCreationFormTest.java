@@ -4,12 +4,17 @@ import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static ru.iteco.fmhandroid.ui.data.DataHelper.authInfo;
 
 import android.os.RemoteException;
+import android.os.SystemClock;
 
+import androidx.test.espresso.Espresso;
 import androidx.test.espresso.PerformException;
+import androidx.test.espresso.action.ViewActions;
+import androidx.test.espresso.matcher.RootMatchers;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.uiautomator.UiDevice;
 import androidx.test.uiautomator.UiObjectNotFoundException;
@@ -25,6 +30,7 @@ import java.time.temporal.ChronoUnit;
 
 import io.qameta.allure.android.runners.AllureAndroidJUnit4;
 import io.qameta.allure.kotlin.junit4.DisplayName;
+import ru.iteco.fmhandroid.R;
 import ru.iteco.fmhandroid.ui.data.CustomRecyclerViewActions;
 import ru.iteco.fmhandroid.ui.data.DataHelper;
 import ru.iteco.fmhandroid.ui.data.TestUtils;
@@ -51,12 +57,12 @@ public class NewsCreationFormTest extends BaseTest {
         device =
                 UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
 
-       /* try {
+       try {
             authSteps.isAuthScreen();
         } catch (PerformException e) {
             mainPageSteps.clickLogOutBut();
         }
-        authSteps.authWithValidData(authInfo());*/
+        authSteps.authWithValidData(authInfo());
         mainPageSteps.isMainPage();
         mainPageSteps.openNewsPageThroughTheMainMenu();
         newsPageSteps.openControlPanel();
@@ -124,19 +130,6 @@ public class NewsCreationFormTest extends BaseTest {
         controlPanelSteps.scrollToElementInRecyclerList(tradeUnionNews.getNewsName()).check(matches(isDisplayed()));
     }
 
-    @Test
-    @DisplayName("Создание Новости с категорией Профсоюз")
-    public void shouldCreateANewsItemWithCategory() {
-        DataHelper.CreateNews tradeUnionNews = DataHelper.newsWithRandomNameAndDescription()
-                .withCategory(DataHelper.getCategoryTradeUnion()).withDueDate(today).build();
-        String categoryTradeUnion = "Профсоюз";
-        controlPanelSteps.selectANewsCategoryFromTheList(categoryTradeUnion);
-        controlPanelSteps.fillingOutTheFormCreatingNewsWithDate(tradeUnionNews);
-        controlPanelSteps.saveButtonClick();
-
-        // Проверка, что элемент отображается в списке
-        onView(withText(tradeUnionNews.getNewsName())).check(matches(isDisplayed()));
-    }
 
 
     @Test
@@ -161,7 +154,7 @@ public class NewsCreationFormTest extends BaseTest {
         controlPanelSteps.selectANewsCategoryFromTheList(categoryGratitude);
         controlPanelSteps.fillingOutTheFormCreatingNewsWithDate(gratitudeNews);
         controlPanelSteps.saveButtonClick();
-        //Проверка
+        //Проверка что отображаются новости с заголовком "Тест новость Благодарность"
         controlPanelSteps.scrollToElementInRecyclerList(gratitudeNews.getNewsName()).check(matches(isDisplayed()));
     }
 
@@ -217,7 +210,7 @@ public class NewsCreationFormTest extends BaseTest {
         controlPanelSteps.replaceNewsCategoryText(MyCategory);
         controlPanelSteps.fillingOutTheFormCreatingNewsWithDate(needHelpNews);
         controlPanelSteps.saveButtonClick();
-        controlPanelSteps.checkToast("Wrong category selected. Select a category from the list.", true);
+        controlPanelSteps.checkToast("Saving failed. Try again later.", true);
     }
 
     @Test

@@ -1,5 +1,6 @@
 package ru.iteco.fmhandroid.ui.steps;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
 import ru.iteco.fmhandroid.ui.data.DataHelper;
@@ -42,56 +43,66 @@ public class AuthSteps {
     }
 
     public void signBtnClick() {
+        Allure.step("Нажать на кнопку Войти");
         TestUtils.waitView(signBtn).perform(click());
     }
 
     public ViewInteraction getLoginText() {
+        Allure.step("Ввести логин");
         return TestUtils.waitView(loginField);
     }
 
     public ViewInteraction getPasswordText() {
+        Allure.step("Ввести пароль");
         return TestUtils.waitView(passField);
     }
 
-    @Step("Отображение информации об экране Authorization")
+
     public void isAuthScreen() {
-        TestUtils.waitView(allOf(withText("Authorization"), withParent(withParent(withId(R.id.nav_host_fragment))))).check(matches(isDisplayed()));
+        Allure.step("Отображение информации об экране Authorization");
+        TestUtils.waitView(allOf(withText("Authorization"),
+                withParent(withParent(withId(R.id.nav_host_fragment))))).check(matches(isDisplayed()));
         TestUtils.waitView(loginField).check(matches(isDisplayed()));
         TestUtils.waitView(passField).check(matches(isDisplayed()));
         TestUtils.waitView(signBtn).check(matches(isDisplayed()));
     }
-    @Step("Валидные данные")
+
     public void authWithValidData(DataHelper.AuthInfo info) {
+        Allure.step("Валидные данные");
         isAuthScreen();
         enterAValidUsernameAndPassword(info);
         TestUtils.waitView(signBtn).check(matches(isClickable()));
         TestUtils.waitView(signBtn).perform(click());
     }
-    @Step("Ввести валидный пароль и логин")
+
     public void enterAValidUsernameAndPassword(DataHelper.AuthInfo info) {
+        Allure.step("Ввести валидный пароль и логин");
         isAuthScreen();
         TestUtils.waitView(loginField).perform(replaceText(info.getLogin()));
         TestUtils.waitView(passField).perform(replaceText(info.getPass()));
         TestUtils.waitView(signBtn).check(matches(isClickable()));
     }
-    @Step("Невалидные данные")
+
     public void authWithInvalidData(DataHelper.AuthInfo invalidInfo) {
+        Allure.step("Невалидные данные");
         isAuthScreen();
         TestUtils.waitView(loginField).perform(replaceText(invalidInfo.getLogin()));
         TestUtils.waitView(passField).perform(replaceText(invalidInfo.getPass()));
         TestUtils.waitView(signBtn).check(matches(isClickable()));
         TestUtils.waitView(signBtn).perform(click());
     }
-    @Step("Аутентификация с пустыми полями")
+
     public void authWithEmptyFields() {
+        Allure.step("Аутентификация с пустыми полями");
         isAuthScreen();
         TestUtils.waitView(loginField).perform(replaceText(""));
         TestUtils.waitView(passField).perform(replaceText(""));
         TestUtils.waitView(signBtn).check(matches(isClickable()));
         TestUtils.waitView(signBtn).perform(click());
     }
-    @Step("Проверка уведомления")
+
     public void checkToast(int id, boolean visible) {
+        Allure.step("Проверка уведомления");
         if (visible) {
             emptyToast(id).check(matches(isDisplayed()));
         } else {

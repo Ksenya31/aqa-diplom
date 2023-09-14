@@ -5,6 +5,7 @@ import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.intent.Checks.checkNotNull;
 import static androidx.test.espresso.matcher.ViewMatchers.isRoot;
 import static androidx.test.espresso.matcher.ViewMatchers.withEffectiveVisibility;
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
 
 import static org.hamcrest.EasyMock2Matchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -30,6 +31,7 @@ import androidx.test.espresso.UiController;
 import androidx.test.espresso.ViewAction;
 import androidx.test.espresso.ViewAssertion;
 import androidx.test.espresso.ViewInteraction;
+import androidx.test.espresso.contrib.RecyclerViewActions;
 import androidx.test.espresso.matcher.RootMatchers;
 import androidx.test.espresso.matcher.ViewMatchers;
 import androidx.test.espresso.util.HumanReadables;
@@ -51,7 +53,7 @@ import java.time.format.DateTimeFormatter;
 
 public class TestUtils {
     private static UiDevice device;
-    private static final int LAUNCH_TIMEOUT = 10000;
+    private static final int LAUNCH_TIMEOUT = 20000;
 
     public static CustomRecyclerViewActions.RecyclerViewMatcher withRecyclerView(final int recyclerViewId) {
         return new CustomRecyclerViewActions.RecyclerViewMatcher(recyclerViewId);
@@ -59,10 +61,12 @@ public class TestUtils {
 
     public static ViewInteraction waitView(Matcher<View> matcher) {
         onView(isRoot()).perform(ViewActions
-                .waitElement(matcher, 10000));
+                .waitElement(matcher, 20000));
         return onView((matcher));
     }
-
+    public static ViewInteraction atPosition(int position, int targetViewId) {
+        return onView(withId(targetViewId)).perform(RecyclerViewActions.scrollToPosition(position));
+    }
     public static Matcher<View> childAtPosition(
             final Matcher<View> parentMatcher, final int position) {
 

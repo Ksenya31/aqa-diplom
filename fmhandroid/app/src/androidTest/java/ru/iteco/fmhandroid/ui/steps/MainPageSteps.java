@@ -3,6 +3,7 @@ package ru.iteco.fmhandroid.ui.steps;
 import android.os.SystemClock;
 import android.view.View;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
 import ru.iteco.fmhandroid.ui.data.TestUtils;
@@ -45,75 +46,89 @@ public class MainPageSteps {
     public Matcher<View> scrollView = withClassName(endsWith("ScrollView"));
     public Matcher<View> addNewClaimBut = withId(R.id.add_new_claim_material_button);
 
-    @Step("Отображение информации о разделе Main")
+
     public void isMainPage() {
+        Allure.step("Отображение информации о разделе Main");
         TestUtils.waitView(newsBlockHeader).check(matches(isDisplayed()));
         TestUtils.waitView(withId(R.id.container_list_news_include_on_fragment_main)).check(matches(isDisplayed()));
         TestUtils.waitView(withId(R.id.container_list_claim_include_on_fragment_main)).check(matches(isDisplayed()));
         TestUtils.waitView(claimsBlockHeader).check(matches(isDisplayed()));
     }
-    @Step("Нажать Log Out")
+
     public void clickLogOutBut() {
+        Allure.step("Нажать Log Out");
         TestUtils.waitView(authImBut).check(matches(isDisplayed())).perform(click());
         TestUtils.waitView(logOutBut).check(matches(isDisplayed())).perform(click());
     }
-    @Step("Открыть страницу новостей через главное меню ")
+
     public void openNewsPageThroughTheMainMenu() {
+        Allure.step("Открыть страницу новостей через главное меню");
         TestUtils.waitView(mainMenuImBut).perform(click());
         TestUtils.waitView(newsInTheMainMenu).perform(click());
     }
-    @Step("Открыть страницу Claims через главное меню ")
+
     public void openClaimsPageThroughTheMainMenu() {
+        Allure.step("Открыть страницу Claims через главное меню");
         TestUtils.waitView(mainMenuImBut).perform(click());
         TestUtils.waitView(claimsInTheMainMenu).perform(click());
     }
-    @Step("Открыть страницу AboutPage через главное меню ")
+
     public void openAboutPageThroughTheMainMenu() {
+        Allure.step("Открыть страницу AboutPage через главное меню");
         TestUtils.waitView(mainMenuImBut).perform(click());
         TestUtils.waitView(aboutInTheMainMenu).perform(click());
     }
-    @Step("Закрыт ли блок новостей")
+
     public void isNewsBlockCollapsed() {
+        Allure.step("Закрыт ли блок новостей");
         TestUtils.waitView(newsBlockHeader).check(matches(isDisplayed()));
         TestUtils.waitView(allNewsBut).check(matches(not(isDisplayed())));
         TestUtils.waitView(allNewsCardsBlockConstraintLayout).check(matches(not(isDisplayed())));
     }
-    @Step("Закрыт ли блок Claims")
+
     public void isClaimsBlockCollapsed() {
+        Allure.step("Закрыт ли блок Claims");
         TestUtils.waitView(claimsBlockHeader).check(matches(isDisplayed()));
         TestUtils.waitView(allClaimsBut).check(matches(not(isDisplayed())));
         TestUtils.waitView(allClaimsCardsBlockConstraintLayout).check(matches(not(isDisplayed())));
     }
-    @Step("Открыть страницу Love is all ")
+
     public void openOurMissionPage() {
+        Allure.step("Открыть страницу Love is all");
         TestUtils.waitView(ourMissionImBut).perform(click());
     }
-    @Step("Открыть All News ")
+
     public void clickAllNewsBut() {
+        Allure.step("Открыть All News");
         TestUtils.waitView(allNewsBut).perform(click());
     }
-    @Step("Открыть All Claims")
+
     public void clickAllClaimsBut() {
+        Allure.step("Открыть All Claims");
         TestUtils.waitView(allClaimsBut).perform(click());
     }
-    @Step("Нажатие на кнопку раскрытия новостей")
+
     public void newsExpandMaterialButtonClick() {
+        Allure.step("Нажатие на кнопку раскрытия новостей");
         TestUtils.waitView(newsExpandMaterialBut).perform(click());
     }
-    @Step("Нажатие на кнопку раскрытия Сlaims")
+
     public void claimsExpandMaterialButtonClick() {
+        Allure.step("Нажатие на кнопку раскрытия Сlaims");
         TestUtils.waitView(claimsExpandMaterialBut).perform(click());
     }
-    @Step("Открыть описание элемента Claim ")
+
     public void openClaimItemDescription(int position) {
+        Allure.step("Открыть описание элемента Claim");
         TestUtils.waitView(scrollView).check(matches(isEnabled()));
         TestUtils.waitView(scrollView).perform(swipeUp());
         SystemClock.sleep(3000);
         TestUtils.waitView(TestUtils.withRecyclerView(R.id.claim_list_recycler_view)
                 .atPositionOnView(position, R.id.claim_list_card)).perform(click());
     }
-    @Step("Добавить новую жалобу ")
+
     public void addNewClaimButtonClick() {
+        Allure.step("Добавить новую жалобу");
         TestUtils.waitView(addNewClaimBut).perform(click());
     }
 

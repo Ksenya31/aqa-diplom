@@ -38,13 +38,13 @@ public class NewsPageTest extends BaseTest {
     public void logoutCheck() throws RemoteException {
         device =
                 UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
-        //device.setOrientationNatural();
-        /*try {
+        device.setOrientationNatural();
+        try {
             authSteps.isAuthScreen();
         } catch (PerformException e) {
             mainPageSteps.clickLogOutBut();
         }
-        authSteps.authWithValidData(authInfo());*/
+        authSteps.authWithValidData(authInfo());
         mainPageSteps.isMainPage();
         mainPageSteps.openNewsPageThroughTheMainMenu();
     }

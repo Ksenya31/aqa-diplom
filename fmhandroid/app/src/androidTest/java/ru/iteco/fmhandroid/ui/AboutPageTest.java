@@ -41,7 +41,7 @@ public class AboutPageTest extends BaseTest {
     public void logoutCheck() throws RemoteException {
         device =
                 UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
-        //device.setOrientationNatural();
+        device.setOrientationNatural();
         try {
             authSteps.isAuthScreen();
         } catch (PerformException e) {

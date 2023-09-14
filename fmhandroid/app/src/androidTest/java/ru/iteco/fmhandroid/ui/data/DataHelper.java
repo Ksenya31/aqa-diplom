@@ -54,10 +54,6 @@ public class DataHelper {
     }
 
 
-
-
-
-
     public static class ToastMatcher extends TypeSafeMatcher<Root> {
 
         @Override
@@ -88,32 +84,11 @@ public class DataHelper {
         return LocalDateTime.now().plusDays(plusDays);
     }
 
-    public static LocalDateTime getValidDate() {
-        int randomNumber = ThreadLocalRandom.current().nextInt(1, 368);
-        LocalDateTime date = generateDate(randomNumber);
-        return date;
-    }
-
 
     public static String getTitle() {
         return "Заголовок" + " " + generateTitleId();
     }
 
-    public static String getClaimTitleWithASpace() {
-        return " Заголовок" + " " + generateTitleId();
-    }
-
-    public static String getClaimTitle50Characters() {
-        return "Заголовок" + " " + DataHelper.generateTitleId() + " " + "50з";
-    }
-
-    public static String getClaimTitle49Characters() {
-        return "Заголовок" + " " + DataHelper.generateTitleId() + " " + "49";
-    }
-
-    public static String getClaimTitle51Characters() {
-        return "Заголовок" + " " + DataHelper.generateTitleId() + " " + "51зн";
-    }
 
     public static String getDescription() {
         return "Описание" + " " + generateTitleId();
@@ -152,7 +127,6 @@ public class DataHelper {
         return "Нужна помощь";
     }
 
-
     public static String getComment() {
         return "Комментарий" + " " + DataHelper.generateTitleId();
     }
@@ -190,7 +164,6 @@ public class DataHelper {
             public Builder() {
 
             }
-
 
             public Builder withStatus(String val) {
                 this.status = val;
@@ -231,20 +204,9 @@ public class DataHelper {
             }
         }
 
-        public String getClaimStatus() {
-            return status;
-        }
-
-        public LocalDateTime getDueDate() {
-            return dueDate;
-        }
 
         public String getClaimName() {
             return name;
-        }
-
-        public String getClaimDescription() {
-            return description;
         }
 
         public String getExecutorName() {
@@ -261,11 +223,6 @@ public class DataHelper {
         public static final String CANCELED = "Cancelled";
     }
 
-
-    public static CreateClaim.Builder claimWithRandomNameAndDescription() {
-        CreateClaim.Builder createClaim = new CreateClaim.Builder(getTitle(), getDescription());
-        return createClaim;
-    }
 
     public static CreateClaim.Builder claim() {
         CreateClaim.Builder createClaim = new CreateClaim.Builder();

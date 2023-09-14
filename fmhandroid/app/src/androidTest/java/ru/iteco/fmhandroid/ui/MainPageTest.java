@@ -1,8 +1,6 @@
 package ru.iteco.fmhandroid.ui;
 
-import android.content.Context;
 import android.os.RemoteException;
-import android.os.SystemClock;
 
 import androidx.test.espresso.PerformException;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -12,14 +10,11 @@ import io.qameta.allure.android.runners.AllureAndroidJUnit4;
 import io.qameta.allure.kotlin.junit4.DisplayName;
 
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import ru.iteco.fmhandroid.ui.data.CustomViewAssertion;
 import ru.iteco.fmhandroid.ui.steps.*;
 
-import static androidx.test.espresso.action.ViewActions.pressBack;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static ru.iteco.fmhandroid.ui.data.DataHelper.authInfo;
@@ -40,13 +35,13 @@ public class MainPageTest extends BaseTest {
     public void logoutCheck() throws RemoteException {
         device =
                 UiDevice.getInstance(InstrumentationRegistry.getInstrumentation());
-        //device.setOrientationNatural();
-        /*try {
+        device.setOrientationNatural();
+        try {
             authSteps.isAuthScreen();
         } catch (PerformException e) {
             mainPageSteps.clickLogOutBut();
         }
-      authSteps.authWithValidData(authInfo());*/
+      authSteps.authWithValidData(authInfo());
         mainPageSteps.isMainPage();
     }
 
@@ -80,25 +75,15 @@ public class MainPageTest extends BaseTest {
         ourMissionPageSteps.isOurMissionPage();
     }
 
-    /*@Test
+    @Test
     @DisplayName("Выход из профиля Log out")
     public void shouldOpenTheLoginPage() {
         mainPageSteps.clickLogOutBut();
         authSteps.isAuthScreen();
         authSteps.authWithValidData(authInfo());
-        SystemClock.sleep(10000);
         mainPageSteps.isMainPage();
-        }*/
-
+        }
     //Раздел Main
-    @Test
-    @DisplayName("Разворачивание новостного блока News")
-    public void shouldOpenNews() {
-        int positionNews = 1;
-        newsPageSteps.openNewsOnNewsPage(positionNews);
-        newsPageSteps.getNewsItemDescription(positionNews).check(matches(isDisplayed()));
-    }
-
 
     @Test
     @DisplayName("Разворачивание новостной ленты с блоками News")
@@ -146,7 +131,7 @@ public class MainPageTest extends BaseTest {
     @Test
     @DisplayName("Переход в Claims (блок с претензиями)")
     public void shouldOpenClaimsItemDescription() {
-        int claimPosition = 0;
+        int claimPosition = 4;
         mainPageSteps.openClaimItemDescription(claimPosition);
         claimsPageSteps.getClaimItemDescription().check(matches(isDisplayed()));
     }

@@ -38,6 +38,7 @@ import org.hamcrest.Matchers;
 
 import java.time.LocalDateTime;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
 import ru.iteco.fmhandroid.ui.data.CustomRecyclerViewActions;
@@ -91,29 +92,31 @@ public class ControlPanelSteps {
     public Matcher<View> createTimeInputEndIcon = allOf(withId(R.id.text_input_end_icon), withParent(withParent(withParent(withParent(withId(R.id.news_item_publish_time_text_input_layout))))));
     public Matcher<View> descriptionTextInputEndIcon = allOf(withId(R.id.text_input_end_icon), withParent(withParent(withParent(withParent(withId(R.id.news_item_description_text_input_layout))))));
     public Matcher<View> messageChangesWonTBeSaved = withText("The changes won't be saved, do you really want to log out?");
-    public Matcher<View> editNewsMaterialButton = allOf(withId(R.id.edit_news_material_button),withParent(withParent(withParent(withParent(withId(R.id.container_list_news_include))))));
+    public Matcher<View> editNewsMaterialButton = allOf(withId(R.id.edit_news_material_button), withParent(withParent(withParent(withParent(withId(R.id.container_list_news_include))))));
 
     public int newsItemTitleTextView = (R.id.news_item_title_text_view);
 
-    @Step("Открыть новость")
+
     public void openNewsCard(DataHelper.CreateNews news) {
+        Allure.step("Открыть новость");
         checkNewsIsPresent(news);
         getItemNewsEditElement(news.getNewsName()).perform(click());
     }
 
 
-
-    @Step("Всплывающее уведомление о неправильной категории ")
     public ViewInteraction wrongСategoryToast(String text) {
+        Allure.step("Всплывающее уведомление о неправильной категории");
         return onView(withText(text)).inRoot(new DataHelper.ToastMatcher());
     }
-    @Step("Панель управления ")
+
     public void isControlPanel() {
+        Allure.step("Панель управления");
         TestUtils.waitView(withText("Control panel")).check(matches(isDisplayed()));
         TestUtils.waitView(addNewsImBut).check(matches(isDisplayed()));
     }
-    @Step("Проверка формы Creating News  ")
+
     public void isCreatingNewsForm() {
+        Allure.step("Проверка формы Creating News");
         TestUtils.waitView(newsItemCategoryField).check(matches(isDisplayed()));
         TestUtils.waitView(newsItemTitleField).check(matches(isDisplayed()));
         TestUtils.waitView(newsItemPublishDateField).check(matches(isDisplayed()));
@@ -123,8 +126,9 @@ public class ControlPanelSteps {
         TestUtils.waitView(cancelBut).check(matches(isDisplayed()));
         TestUtils.waitView(switcherActive).check(matches(isDisplayed()));
     }
-    @Step("Проверка карточки новостей")
+
     public void isCardTestNews(String title, String description) {
+        Allure.step("Проверка карточки новостей");
         TestUtils.waitView(newsItemCategoryField).check(matches(withText("Объявление")));
         TestUtils.waitView(newsItemTitleField).check(matches(withText(title)));
         TestUtils.waitView(newsItemDescriptionField).check(matches(withText(description)));
@@ -133,233 +137,262 @@ public class ControlPanelSteps {
         TestUtils.waitView(switcherActive).check(matches(isDisplayed()));
     }
 
-    @Step("Проверка карточки новостей")
+
     public void isCreatingTestNews() {
+        Allure.step("Проверка карточки новостей");
         TestUtils.waitView(withText("Creating News")).check(matches(isDisplayed()));
         TestUtils.waitView(switcherActive).check(matches(isDisplayed()));
     }
 
 
-    @Step("Выбрать категорию новостей из списка ")
     public void selectANewsCategoryFromTheList(String nameCategory) {
+        Allure.step("Выбрать категорию новостей из списка");
         TestUtils.waitView(newsItemCategoryField).perform(click());
-        onView(withText(nameCategory)).inRoot(RootMatchers.isPlatformPopup()).check(matches(isDisplayed())).perform(click());
         Espresso.closeSoftKeyboard();
+        onView(withText(nameCategory)).inRoot(RootMatchers.isPlatformPopup()).check(matches(isDisplayed())).perform(click());
 
     }
-    @Step("Установить дату в виджете выбора даты ")
+
     public void setDateToDatePicker(LocalDateTime date) {
+        Allure.step("Установить дату в виджете выбора даты");
         TestUtils.waitView(newsItemPublishDateField).perform(click());
         TestUtils.waitView(datePicker).check(matches(isDisplayed()));
         TestUtils.waitView(datePicker).perform(setDate(date.getYear(), date.getMonthValue(), date.getDayOfMonth()));
     }
-    @Step("Установить время в виджете выбора времени ")
+
     public void setTimeToTimePicker(int hour, int minute) {
+        Allure.step("Установить время в виджете выбора времени");
         TestUtils.waitView(timePicker).check(matches(isDisplayed()));
         TestUtils.waitView(timePicker).perform(setTime(hour, minute));
     }
-    @Step("Установить время в виджете выбора времени с клавиатуры ")
+
     public void setTimeToTimePickerFromTheKeyboard(String hour, String minutes) {
+        Allure.step("Установить время в виджете выбора времени с клавиатуры");
         TestUtils.waitView(timePicker).check(matches(isDisplayed()));
         TestUtils.waitView(timePickerToggleMode).perform(click());
         TestUtils.waitView(inputHour).check(matches(isDisplayed())).perform(replaceText(hour));
         TestUtils.waitView(inputMinute).check(matches(isDisplayed())).perform(replaceText(minutes));
         okButtonClick();
     }
-    @Step("Открыть виджет выбора времени новостей ")
+
     public void openNewsTimePicker() {
+        Allure.step("Открыть виджет выбора времени новостей");
         TestUtils.waitView(newsItemPublishTimeField).perform(click());
     }
-    @Step("    ")
+
     public void openNews() {
+        Allure.step("Открыть новость");
         TestUtils.waitView(newsItemMaterialCardView).perform(click());
     }
 
-    @Step("Установить время ")
+
     public void setTimeToTimeField(LocalDateTime date) {
+        Allure.step("Установить время");
         TestUtils.waitView(newsItemPublishTimeField).perform(click());
         setTimeToTimePicker(date.getHour(), date.getMinute());
         okButtonClick();
     }
-    @Step("Заполнение формы создания новости с указанием даты ")
+
     public void fillingOutTheFormCreatingNewsWithDate(DataHelper.CreateNews news) {
+        Allure.step("Заполнение формы создания новости с указанием даты");
         TestUtils.waitView(newsItemTitleField).perform(replaceText(news.getNewsName()));
         setDateToDatePicker(news.getDueDate());
         TestUtils.waitView(okBut).perform(click());
         setTimeToTimeField(news.getDueDate());
         TestUtils.waitView(newsItemDescriptionField).perform(replaceText(news.getNewsDescription()));
     }
-    @Step("Заменить текст заголовка новости ")
+
     public void replaceNewsTitleText(String title) {
+        Allure.step("Заменить текст заголовка новости");
         TestUtils.waitView(newsItemTitleField).perform(replaceText(title));
     }
-    @Step("Заменить текст описания новости ")
+
     public void replaceNewsDescriptionText(String description) {
+        Allure.step("Заменить текст описания новости");
         TestUtils.waitView(newsItemDescriptionField).perform(replaceText(description));
     }
-    @Step("Элемент удаления новости ")
+
     public ViewInteraction getItemNewsDeleteElement(String title) {
-        return TestUtils.waitView(allOf(withId(R.id.delete_news_item_image_view), withParent(withParent(allOf(withId(R.id.news_item_material_card_view), withChild(withChild(withText(title))))))));
+        Allure.step("Элемент удаления новости");
+        return TestUtils.waitView(allOf(withId(R.id.delete_news_item_image_view),
+                withParent(withParent(allOf(withId(R.id.news_item_material_card_view),
+                        withChild(withChild(withText(title))))))));
     }
-    @Step("Элемент добавления новости ")
+
     public ViewInteraction getItemNewsEditElement(String title) {
-        return onView(allOf(withId(R.id.edit_news_item_image_view), withParent(withParent(allOf(withId(R.id.news_item_material_card_view), withChild(withChild(withText(title))))))));
+        Allure.step("Элемент добавления новости");
+        return onView(allOf(withId(R.id.edit_news_item_image_view),
+                withParent(withParent(allOf(withId(R.id.news_item_material_card_view),
+                        withChild(withChild(withText(title))))))));
     }
-    @Step("Элемент для просмотра новости ")
+
     public ViewInteraction getItemNewsButViewElement(String title) {
+        Allure.step("Элемент для просмотра новости");
         return onView(allOf(withId(R.id.news_item_material_card_view)));
     }
-    @Step("Элемент описания новости ")
+
     public ViewInteraction getItemNewsDescriptionElement(String title) {
+        Allure.step("Элемент описания новости");
         return onView(allOf(withId(R.id.news_item_description_text_view),
                 withParent(withParent(allOf(withId(R.id.news_item_material_card_view),
                         withChild(withChild(withText(title))))))));
     }
-    @Step("Открыть форму редактирования новости ")
+
     public void openEditNewsForm() {
+        Allure.step("Открыть форму редактирования новости");
         TestUtils.waitView(editNewsMaterialButton).perform(click());
     }
 
-    @Step("Удалить элемент новости")
+
     public void deleteItemNews(String title) {
+        Allure.step("Удалить элемент новости");
         scrollToElementInRecyclerList(title);
         getItemNewsDeleteElement(title).check(matches(isDisplayed())).perform(click());
         TestUtils.waitView(messageAboutDelete).check(matches(isDisplayed()));
         TestUtils.waitView(okBut).perform(click());
     }
-    @Step("Прокрутить к элементу в списке  ")
-       public ViewInteraction scrollToElementInRecyclerList(String description) {
+
+    public ViewInteraction scrollToElementInRecyclerList(String description) {
+        Allure.step("Прокрутить к элементу в списке");
         return TestUtils.waitView(newsRecyclerList)
                 .perform(RecyclerViewActions.scrollTo(allOf(
                         hasDescendant(withText(description)))));
     }
-    @Step ("Проверкa видимости элемента после выполнения прокрутки")
-    public ViewInteraction checkElementVisibility(String description) {
-        return onView(allOf(
-                hasDescendant(withText(description)),
-                isDisplayed()
-        ));
-    }
-    @Step ("Не видим элемент после выполнения прокрутки")
-    public ViewInteraction checkElementNotVisible(String description) {
-        return onView(allOf(
-                hasDescendant(withText(description)),
-                not(isDisplayed())
-        ));
-    }
 
-    @Step("Проверить наличие новости ")
+
     public void checkNewsIsPresent(DataHelper.CreateNews news) {
+        Allure.step("Проверить наличие новости");
         scrollToElementInRecyclerList(news.getNewsName()).check(matches(isDisplayed()));
     }
-    @Step("Проверить отсутствие новости ")
+
     public void checkNewsDoesNotPresent(DataHelper.CreateNews news) {
+        Allure.step("Проверить отсутствие новости");
         getNewsRecyclerList()
                 .check(matches(CustomRecyclerViewActions.RecyclerViewMatcher
                         .matchChildViewIsNotExist(newsItemTitleTextView, withText(news.getNewsName()))));
     }
 
-    @Step("Открыть описание новости ")
+
     public void openNewsDescription(DataHelper.CreateNews news) {
+        Allure.step("Открыть описание новости");
         getItemNewsButViewElement(news.getNewsName()).perform(click());
     }
 
 
-    @Step("Проверить всплывающее уведомление ")
     public void checkToast(String text, boolean visible) {
+        Allure.step("Проверить всплывающее уведомление");
         if (visible) {
             wrongСategoryToast(text).check(matches(isDisplayed()));
         } else {
             wrongСategoryToast(text).check(matches(not(isDisplayed())));
         }
     }
-    @Step("Ошибке пустая форма новости")
+
     public void isWrongEmptyFormNews() {
+        Allure.step("Ошибке пустая форма новости");
         TestUtils.waitView(categoryTextInputStartIcon).check(matches(isDisplayed()));
         TestUtils.waitView(titleTextInputEndIcon).check(matches(isDisplayed()));
         TestUtils.waitView(createDateTextInputEndIcon).check(matches(isDisplayed()));
         TestUtils.waitView(createTimeInputEndIcon).check(matches(isDisplayed()));
         TestUtils.waitView(descriptionTextInputEndIcon).check(matches(isDisplayed()));
     }
-    @Step("Сообщение о невозможности сохранения ")
+
     public void isDialogWindowMessageSavingFailed() {
+        Allure.step("Сообщение о невозможности сохранения");
         TestUtils.waitView(withText("Saving failed. Try again later.")).check(matches(isDisplayed()));
         TestUtils.waitView(okBut).check(matches(isDisplayed()));
     }
-    @Step("Открыть форму создания новости ")
+
     public void openCreatingNewsForm() {
+        Allure.step("Открыть форму создания новости");
         TestUtils.waitView(addNewsImBut).perform(click());
     }
-    @Step("Получить заголовок новости ")
+
     public ViewInteraction getNewsItemTitle() {
+        Allure.step("Получить заголовок новости");
         return TestUtils.waitView(newsItemTitleField);
     }
-    @Step("Нажать сохранить ")
+
     public void saveButtonClick() {
+        Allure.step("Нажать сохранить");
         TestUtils.waitView(saveBut).perform(click());
     }
-    @Step("Нажать отмена ")
+
     public void cancelButtonClick() {
+        Allure.step("Нажать отмена");
         TestUtils.waitView(cancelBut).perform(click());
     }
-    @Step("Сообщение о несохранении ")
+
     public ViewInteraction getMessageChangesWonTBeSaved() {
+        Allure.step("Сообщение о несохранении");
         return TestUtils.waitView(messageChangesWonTBeSaved);
     }
-    @Step("Нажать ок ")
-    public void okButtonClick() {
 
+    public void okButtonClick() {
+        Allure.step("Нажать ок");
         TestUtils.waitView(okBut).perform(click());
     }
-    @Step("Отмена удаления ")
+
     public void cancelDeleteButtonClick() {
+        Allure.step("Отмена удаления");
         TestUtils.waitView(cancelDeleteBut).perform(click());
     }
-    @Step("Получить список новостей  ")
+
     public ViewInteraction getNewsRecyclerList() {
+        Allure.step("Получить список новостей");
         return TestUtils.waitView(newsRecyclerList);
     }
-    @Step("Заменить текст категории новости ")
+
     public void replaceNewsCategoryText(String category) {
+        Allure.step("Заменить текст категории новости");
         TestUtils.waitView(newsItemCategoryField).perform(replaceText(category));
     }
-    @Step("Изменить статус новости ")
+
     public void switchNewsStatus() {
+        Allure.step("Изменить статус новости");
         TestUtils.waitView(switcherActive).perform(click());
     }
-    @Step("Переключение  Note Active")
+
     public ViewInteraction getSwitcherNoteActive() {
+        Allure.step("Переключение  Note Active");
         return TestUtils.waitView(switcherNotActive);
     }
-    @Step("Получить дату публикации новости")
+
     public ViewInteraction getNewsItemPublishDate() {
+        Allure.step("Получить дату публикации новости");
         return TestUtils.waitView(newsItemPublishDateField);
     }
-    @Step("Получить время публикации новости ")
+
     public ViewInteraction getNewsItemPublishTime() {
+        Allure.step("Получить время публикации новости");
         return TestUtils.waitView(newsItemPublishTimeField);
     }
-    @Step("Получить категорию новости ")
+
     public ViewInteraction getNewsItemCategory() {
+        Allure.step("Получить категорию новости");
         return TestUtils.waitView(newsItemCategoryField);
     }
-    @Step("Получить описание новости ")
+
     public ViewInteraction getNewsItemDescription() {
+        Allure.step("Получить описание новости");
         return TestUtils.waitView(newsItemDescriptionField);
     }
-    @Step("Сообщение об удалении ")
+
     public ViewInteraction getMessageAboutDelete() {
+        Allure.step("Сообщение об удалении");
         return TestUtils.waitView(messageAboutDelete);
     }
-    @Step("Создать новость ")
+
     public void creatingNews(DataHelper.CreateNews news) {
+        Allure.step("Создать новость");
         TestUtils.waitView(addNewsImBut).perform(click());
         selectANewsCategoryFromTheList(news.getNewsCategory());
         fillingOutTheFormCreatingNewsWithDate(news);
         TestUtils.waitView(saveBut).perform(click());
     }
-    @Step("Создать новость ")
+
     public void createNews(DataHelper.CreateNews... array) {
+        Allure.step("Создать новость");
         newsPageSteps.openControlPanel();
         for (DataHelper.CreateNews news : array) {
             creatingNews(news);

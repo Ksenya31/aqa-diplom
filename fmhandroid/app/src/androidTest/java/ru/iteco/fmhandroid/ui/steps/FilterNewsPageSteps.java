@@ -17,6 +17,7 @@ import org.hamcrest.Matcher;
 import java.time.LocalDateTime;
 import java.util.Calendar;
 
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.R;
 import ru.iteco.fmhandroid.ui.data.TestUtils;
@@ -32,8 +33,9 @@ public class FilterNewsPageSteps {
     public Matcher<View> filterNewsActiveCheckBox = withId(R.id.filter_news_active_material_check_box);
     public Matcher<View> filterNewsInactiveCheckBox = withId(R.id.filter_news_inactive_material_check_box);
 
-    @Step("Отображение информации о разделе Filter News")
+
     public void isFilterNewsForm() {
+        Allure.step("Отображение информации о разделе Filter News");
         TestUtils.waitView(filterNewsTitleTextView).check(matches(isDisplayed()));
         TestUtils.waitView(controlPanelSteps.newsItemCategoryField).check(matches(isDisplayed()));
         TestUtils.waitView(newsItemPublishDateStartField).check(matches(isDisplayed()));
@@ -42,15 +44,17 @@ public class FilterNewsPageSteps {
         TestUtils.waitView(controlPanelSteps.cancelBut).check(matches(isDisplayed()));
     }
 
-    @Step("Открыть Filter News из панели управления. ")
+
     public void isFilterNewsFormControlPanel() {
+        Allure.step("Открыть Filter News из панели управления");
         isFilterNewsForm();
         TestUtils.waitView(filterNewsActiveCheckBox).check(matches(isDisplayed()));
         TestUtils.waitView(filterNewsInactiveCheckBox).check(matches(isDisplayed()));
     }
 
-    @Step("Заполнение формы фильтрации новостей")
+
     public void fillingOutTheFilterNewsForm(String nameCategory, LocalDateTime startDate, LocalDateTime endDate) {
+        Allure.step("Заполнение формы фильтрации новостей");
         controlPanelSteps.selectANewsCategoryFromTheList(nameCategory);
 
         setDateToDatePicker(newsItemPublishDateStartField, startDate);
@@ -60,41 +64,48 @@ public class FilterNewsPageSteps {
         TestUtils.waitView(controlPanelSteps.okBut).perform(click());
     }
 
-    @Step("Выбор даты")
+
     public void setDateToDatePicker(Matcher<View> nameDatePicker, LocalDateTime date) {
+        Allure.step("Выбор даты");
         TestUtils.waitView(nameDatePicker).perform(click());
         TestUtils.waitView(controlPanelSteps.datePicker).check(matches(isDisplayed()));
         TestUtils.waitView(controlPanelSteps.datePicker).perform(setDate(date.getYear(), date.getMonthValue(), date.getDayOfMonth()));
     }
 
-    @Step("Сообщение Wrong period")
+
     public void isMessageWrongPeriod() {
+        Allure.step("Сообщение Wrong period");
         TestUtils.waitView(withText("Wrong period")).check(matches(isDisplayed()));
         TestUtils.waitView(controlPanelSteps.okBut).check(matches(isDisplayed()));
     }
 
-    @Step("Нажать кнопку фильтрации")
+
     public void filterNewsButtonClick() {
+        Allure.step("Нажать кнопку фильтрации");
         TestUtils.waitView(filterBut).perform(click());
     }
 
-    @Step("Получить поле категории фильтрации новостей ")
+
     public ViewInteraction getNewsFilterCategoryField() {
+        Allure.step("Получить поле категории фильтрации новостей");
         return TestUtils.waitView(controlPanelSteps.newsItemCategoryField);
     }
 
-    @Step("Получить поле начальной даты фильтрации новостей ")
+
     public ViewInteraction getNewsFilterPublishDateStartField() {
+        Allure.step("Получить поле начальной даты фильтрации новостей");
         return TestUtils.waitView(newsItemPublishDateStartField);
     }
 
-    @Step("Получить поле оконечной даты фильтрации новостей")
+
     public ViewInteraction getNewsFilterPublishDateEndField() {
+        Allure.step("Получить поле оконечной даты фильтрации новостей");
         return TestUtils.waitView(newsItemPublishDateEndField);
     }
 
-    @Step("Отмена фильтрации")
+
     public void cancelFilterNewsButtonClick() {
+        Allure.step("Отмена фильтрации");
         TestUtils.waitView(controlPanelSteps.cancelBut).perform(click());
     }
 }
